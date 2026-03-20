@@ -11,6 +11,7 @@ import ThirdSection from "./third-section";
 import FourthSection from "./fourth-section";
 import Footer from "./footer";
 import FiveSection from "./five-section";
+import CarouselSection from "./carousel-section";
 
 interface ContainerProps {
 	titleRedLine: React.ReactNode | null,
@@ -38,6 +39,7 @@ export default function ContainerTeste({
 					submitError={submitError}
 				/>
 				<SecondSection />
+				<CarouselSection />
 				<ThirdSection />
 				<FourthSection />
 				<FiveSection />
