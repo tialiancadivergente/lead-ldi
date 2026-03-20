@@ -74,7 +74,7 @@ export default function ContainerQuest({
         className={`relative flex items-center justify-center flex-col overflow-hidden h-full bg-[url('/images/v1/bg-two.webp')] md:bg-[url('/images/v1/bg-two.webp')] bg-cover bg-center`}
       >
         <div className="container mx-auto relative h-full px-4">
-          <div className="flex flex-col items-center justify-center text-center py-20">
+          <div className="flex flex-col items-center justify-center text-center pt-20 pb-5">
             <div className="w-full max-w-4xl mx-auto">
               <div className="mb-6 md:mb-8 flex justify-center mt-6">
                 <Image
@@ -90,7 +90,7 @@ export default function ContainerQuest({
               <div className="flex items-center justify-center flex-col md:flex-row gap-1 md:gap-2">
                 <div className="flex items-center gap-2">
                   <Calendar size={24} color="#C0964B" />
-                  <div className="text-white text-xl font-medium">Segunda-feira, 23/03, às 20h</div>
+                  <div className="text-white text-xl font-medium">6, 7 e 8/4 às 20h</div>
                 </div>
                 <div className="w-[1px] md:h-[24px] h-[1px] bg-[#C0964B]" />
                 <div className="flex items-center gap-2">
@@ -262,6 +262,17 @@ export default function ContainerQuest({
             </div>
           </div>
         </div>
+        <p className="text-white text-xs text-center mb-4 md:mb-5 max-w-[400px] mx-auto">
+          Apos responder as questões, toque no botão abaixo
+          para receber o link e materiais do evento:
+        </p>
+
+        <Button
+          className="w-full mb-10 max-w-sm py-4 md:py-6 text-sm md:text-base hover:opacity-90 transition-opacity duration-300 rounded-3xl bg-[#936C27] bg-[radial-gradient(circle,_#E2CA9E_25%,_#936C27_100%)]"
+          onClick={() => window.open(whatsappUrl, "_blank")}
+        >
+          Entrar no Grupo
+        </Button>
         <footer className="w-full flex items-center justify-center flex-col mb-20 gap-8">
           <div className="mb-6 md:mb-8 flex justify-center mt-6">
             <Image

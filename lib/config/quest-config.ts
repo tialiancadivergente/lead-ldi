@@ -2,10 +2,10 @@ export const DEFAULT_QUEST_FORM_VERSION_ID =
   "a9e5538c-ee07-41e4-95a0-862e89adf186";
 
 const QUEST_WHATSAPP_URL_BY_TEMPERATURE = {
-  f: "https://sendflow.click/i/oramar26",
-  org: "https://sendflow.click/i/oramar26",
-  m: "https://sendflow.click/i/oramar26",
-  q: "https://sendflow.click/i/oramar26",
+  f: "https://redirects.aliancadivergente.com.br/ldi ",
+  org: "https://redirects.aliancadivergente.com.br/ldi ",
+  m: "https://redirects.aliancadivergente.com.br/ldi ",
+  q: "https://redirects.aliancadivergente.com.br/ldi ",
 } as const;
 
 type QuestTesteTemperatureKey = keyof typeof QUEST_WHATSAPP_URL_BY_TEMPERATURE;
