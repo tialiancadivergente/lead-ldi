@@ -51,7 +51,7 @@ export const Headline: IHeadline[] = [
     title: (
       <>
         <span className="text-[#C0964B] md:text-[#0A3740]">Livre-se dos padrões que travam sua vida financeira,</span> mesmo com todo seu esforço, capacidade e dedicação.
-        Ou ignore este movimento e repita o mesmo erro por mais 10 anos…
+        <p className="mt-4">Ou ignore este movimento e repita o mesmo erro por mais 10 anos…</p>
       </>
     ),
 

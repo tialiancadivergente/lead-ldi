@@ -32,9 +32,9 @@ export default function FiveSection() {
 				<Image
 					src="/images/v1/LOGO-OLDI.png"
 					alt="Risk"
-					width={548}
-					height={155}
-          className="w-full md:max-w-[548px] max-w-[320px] mx-auto"
+					width={300}
+					height={85}
+          className="w-full md:max-w-[350px] max-w-[250px] mx-auto"
 				/>
 				<p className="text-[#D3CAC0] font-spectral md:block hidden text-[20px] md:text-[25px] text-center leading-[125%] font-extrabold w-full max-w-[667px] mx-auto my-10">
 					Não é sobre as pessoas mais talentosas. <br /> Não é sobre as mais preparadas.
@@ -60,7 +60,7 @@ export default function FiveSection() {
 					ACESSAR O LEVANTE DOS IMPROVÁVEIS
 				</button>
 				<div className="flex md:flex-row flex-col-reverse items-center justify-between gap-10 w-full md:mt-28 mt-12 md:gap-2">
-					<div className="text-white text-[14px] text-center md:text-left leading-[135%] font-mulish">Copyright © O Resgate Dos Otimistas. <br /> Todos os direitos reservados.</div>
+					<div className="text-white text-[14px] text-center md:text-left leading-[135%] font-mulish">Copyright © O Levante dos Improváveis. <br /> Todos os direitos reservados.</div>
 					<Image
 						src="/images/logo.png"
 						alt="Risk"

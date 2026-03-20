@@ -24,14 +24,14 @@ export default function SecondSection() {
 			`}
 		>
 			<div className="w-full max-w-[349px] md:max-w-[990px] mx-auto text-center py-10 font-mulish text-[16px] md:text-[18px] leading-[125%] text-[#F4F0E1] font-bold">
-				<p className="md:block hidden">
+				<p className="md:block hidden mb-4 md:mb-8">
 					Você continua acreditando que o problema é falta de esforço? <br />
 					Junte-se a nós e seja mais um improvável que deu certo.
 				</p>
-				<p className="md:block hidden font-spectral font-bold uppercase my-4 md:my-8 leading-[120%] tracking-[-0.02em] text-[#C0964B] text-[20px] md:text-[40px]">
+				{/* <p className="md:block hidden font-spectral font-bold uppercase my-4 md:my-8 leading-[120%] tracking-[-0.02em] text-[#C0964B] text-[20px] md:text-[40px]">
 					NÃO É <span className="line-through">TALENTO</span>, NÃO É <span className="line-through">SORTE</span>, <br />
 					NÃO É <span className="line-through">ESFORÇO</span>
-				</p>
+				</p> */}
 				<div className="md:block hidden md:text-[40px] text-[20px] font-spectral font-bold text-[#C0964B] leading-[120%]">
 					O QUE REALMENTE TRAVA SUA VIDA DEPOIS DOS 30 SÃO AS RELAÇÕES QUE VOCÊ AINDA NÃO SABE COMO CORRIGIR.
 				</div>

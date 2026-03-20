@@ -44,9 +44,9 @@ const mulish = Mulish({
 })
 
 export const metadata: Metadata = {
-  title: "O Resgate dos Otimistas - Diagnóstico de Dependência Emocional",
+  title: "O Levante dos Improváveis",
   description:
-    "Faça seu diagnóstico de dependência emocional gratuito e descubra como aumentar seu nível de permissão.",
+    "Não é sobre as pessoas mais talentosas. Não é sobre as mais preparadas. É um processo prático para destravar sua vida financeira depois dos 30 e corrigir relacionamentos que impedem sua permissão de ir mais longe.",
   icons: {
     icon: '/images/cropped-Alianca-Divergente-Logotipo-Favicon-32x32.png',
     shortcut: '/images/cropped-Alianca-Divergente-Logotipo-Favicon-32x32.png',

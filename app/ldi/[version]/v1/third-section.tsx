@@ -96,8 +96,8 @@ export default function ThirdSection() {
         <p className="text-[#C0964B] font-spectral text-[20px] md:text-[35px] text-center leading-[125%] font-bold max-w-[667px] w-full mx-auto mt-10 md:mt-0">
           Esse encontro é para quem:
         </p>
-        <div className="flex flex-col md:flex-row items-center justify-center md:gap-1 gap-8 md:mt-16 mt-10">
-          <div className="flex md:flex-col flex-row items-start justify-start md:gap-1 gap-4">
+        <div className="flex flex-col md:flex-row items-center md:items-start justify-between md:gap-4 gap-8 md:mt-16 mt-10">
+          <div className="flex md:flex-col flex-row items-start justify-start md:gap-1 gap-4 w-full max-w-[250px]">
             <Image
               src="/images/v1/icon-check.png"
               alt="Risk"
@@ -108,7 +108,7 @@ export default function ThirdSection() {
               Já investiu em cursos, mentorias ou terapias e ainda sente a vida travada
             </p>
           </div>
-          <div className="flex md:flex-col flex-row items-start justify-start md:gap-1 gap-4">
+          <div className="flex md:flex-col flex-row items-start justify-start md:gap-1 gap-4 w-full max-w-[250px]">
             <Image
               src="/images/v1/icon-check.png"
               alt="Risk"
@@ -119,7 +119,7 @@ export default function ThirdSection() {
               Sabe que tem capacidade de sobra, mas o resultado financeiro não acompanha
             </p>
           </div>
-          <div className="flex md:flex-col flex-row items-start justify-start md:gap-1 gap-4">
+          <div className="flex md:flex-col flex-row items-start justify-start md:gap-1 gap-4 w-full max-w-[250px]">
             <Image
               src="/images/v1/icon-check.png"
               alt="Risk"
@@ -130,7 +130,7 @@ export default function ThirdSection() {
               Quer entender o que realmente está te segurando e corrigir isso
             </p>
           </div>
-          <div className="flex md:flex-col flex-row items-start justify-start md:gap-1 gap-4">
+          <div className="flex md:flex-col flex-row items-start justify-start md:gap-1 gap-4 w-full max-w-[270px]">
             <Image
               src="/images/v1/icon-check.png"
               alt="Risk"
