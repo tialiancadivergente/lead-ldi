@@ -34,7 +34,7 @@ export default function FourthSection() {
 					<p className="text-[#D3CAC0] font-spectral text-[25px] md:text-[35px] text-center md:text-left leading-[125%] font-bold">
 						QUEM VAI SER O SEU MENTOR NESSA JORNADA?
 					</p>
-          <div className="mt-[450px] md:mt-0 w-full max-w-[350px] mx-auto flex flex-col gap-4 md:first-letter:max-w-[517px]">
+          <div className="mt-[450px] md:mt-0 w-full max-w-[350px] mx-auto flex flex-col gap-4 md:max-w-[517px]">
             <p className="text-[#C0964B] font-spectral text-[30px] text-left leading-[125%] font-bold md:mt-0">
               Ramon Galimberti
             </p>

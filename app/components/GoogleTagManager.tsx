@@ -12,7 +12,7 @@ const GoogleTagManager = () => {
     const userIp = useUserIP(); // Captura o IP no carregamento
     console.log('meu ip =>', userIp);
     useEffect(() => {
-        const defaultGtmId = 'GTM-T6FPRPPT';
+        const defaultGtmId = 'GTM-WKPB8M8L';
         const oroOrgGtmId = '';
         const normalizedTemperature = (Array.isArray(temperature) ? temperature[0] : temperature || '').toLowerCase();
         const shouldSkipTagManager = normalizedTemperature === 'o' || normalizedTemperature === 'org';
@@ -27,7 +27,7 @@ const GoogleTagManager = () => {
             return defaultGtmId;
         };
 
-        
+
         const pathname = typeof window !== 'undefined' ? window.location.pathname : '';
         const gtmIdByPath = getGtmIdByPathname(pathname);
         const gtmId = gtmIdByPath !== defaultGtmId
