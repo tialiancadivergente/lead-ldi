@@ -1,5 +1,5 @@
 export const DEFAULT_QUEST_FORM_VERSION_ID =
-  "a9e5538c-ee07-41e4-95a0-862e89adf186";
+  "2f76bc57-57a2-41fd-9c2c-18a726dd4fe0";
 
 const QUEST_WHATSAPP_URL_BY_TEMPERATURE = {
   f: "https://redirects.aliancadivergente.com.br/ldi ",
