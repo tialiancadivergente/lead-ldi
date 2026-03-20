@@ -27,7 +27,7 @@ export default function HeroSection({
       id="hero"
       className="relative h-[1041px] md:min-h-[924px] md:h-[924px] flex flex-col justify-start overflow-hidden bg-[#071117] bg-[url('/images/v1/bg-mobile.png')] md:bg-[url('/images/v1/bg.webp')] bg-cover bg-center px-4 pt-5 pb-6 md:p-0"
     >
-      <div className="w-full max-w-[349px] md:max-w-[527px] flex flex-col items-center md:items-start text-left md:text-left mt-0 md:mt-[60px] md:ml-[32px] mx-auto md:mx-0">
+      <div className="w-full max-w-[349px] md:max-w-[527px] flex flex-col items-center md:items-start text-left md:text-left mt-0 md:mt-[60px] md:ml-[100px] mx-auto md:mx-0">
         <div className="w-full justify-start hidden md:flex">
           <Image
             src="/images/logo-o-levante-dos-improvaveis.png"
@@ -37,12 +37,12 @@ export default function HeroSection({
           />
         </div>
 
-        <div className="w-full flex justify-start md:hidden">
+        <div className="w-full flex justify-center md:hidden mb-6">
           <Image
             src="/images/v1/LOGO-OLDI.png"
             alt="Logo O Levante dos Improváveis"
-            width={379}
-            height={111}
+            width={270}
+            height={77}
           />
         </div>
 
@@ -98,7 +98,7 @@ export default function HeroSection({
           Este é um evento de 3 dias para você que já tentou de tudo e continua no mesmo lugar – mas agora está pronto para se levantar contra os padrões que travam seu dinheiro, decisões e liberdade.
         </p>
 
-        <div className="mt-[20px] w-full max-w-[349px] md:max-w-[527px]">
+        <div className="w-full max-w-[349px] md:max-w-[527px] mt-10 md:mt-5">
           <LeadCaptureForm
             formName={formName}
             onSubmit={onSubmit}
@@ -120,7 +120,7 @@ export default function HeroSection({
               className="shrink-0 md:w-[18px] md:h-[18px]"
             />
             <span className="leading-[120%]">
-              Segunda-feira, 23/03, às 20h
+              Segunda-feira, 06/04 | 20h
             </span>
           </div>
           <div className="w-[1px] h-[16px] bg-[#F4F0E1]" />
