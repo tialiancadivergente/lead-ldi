@@ -3,8 +3,8 @@ export const DEFAULT_QUEST_FORM_VERSION_ID =
 
 const QUEST_WHATSAPP_URL_BY_TEMPERATURE = {
   f: "https://redirects.aliancadivergente.com.br/ldi",
-  org: "https://sendflow.click/i/ldi-org",
-  o: "https://sendflow.click/i/ldi-org",
+  org: "https://redirects.aliancadivergente.com.br/ldi-org",
+  o: "https://redirects.aliancadivergente.com.br/ldi-org",
   m: "https://redirects.aliancadivergente.com.br/ldi",
   q: "https://redirects.aliancadivergente.com.br/ldi",
 } as const;
