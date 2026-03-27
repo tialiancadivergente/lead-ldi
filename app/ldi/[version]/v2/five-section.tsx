@@ -51,7 +51,7 @@ export default function FiveSection() {
             ACESSAR O LEVANTE DOS IMPROVÁVEIS
           </button>
           <p className="mt-[65px] font-spectral font-normal not-italic text-[12px] leading-[120%] tracking-[0] align-middle uppercase text-[#F4F0E1]">
-            <span className="font-bold">Copyright 2026</span> © Todos os direitos reservados.
+            <span className="font-bold">Copyright 2026666666</span> © Todos os direitos reservados.
           </p>
         </div>
       </div>

@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 import React from "react";
+import { LeadCaptureSubmitData } from "@/app/components/form/lead-capture-form";
+import DialogCustom from "@/app/components/dialog-custom/dialog-custom";
 
 const testimonials = [
   {
@@ -31,7 +33,14 @@ const testimonials = [
   },
 ];
 
-export default function HeroSection() {
+interface HeroSectionProps {
+  formName: string;
+  onSubmit: (data: LeadCaptureSubmitData) => void | Promise<void>;
+  submitError?: string | null;
+}
+
+export default function HeroSection({ formName, onSubmit, submitError }: HeroSectionProps) {
+
   return (
     <section
       id="hero"
@@ -71,9 +80,16 @@ export default function HeroSection() {
             </p>
           </div>
 
-          <button className="w-full max-w-[300px] h-[50px] bg-[#C0964B] text-white text-sm font-bold mt-8 transition-all duration-200 hover:bg-[#e9cb84] hover:text-black">
-            PARTICIPAR GRATUITAMENTE
-          </button>
+          <DialogCustom
+            formName={formName}
+            onSubmit={onSubmit}
+            submitError={submitError}
+            submitLabel="Participar gratuitamente"
+            emailInputClassName="w-full h-[52px] md:h-[64px] px-[16px] rounded-[8px] border border-[#BDBCBC] bg-[#FFFFFF1A] backdrop-blur-[20px] placeholder:text-white text-white font-mulish font-medium text-[16px] leading-[145%] outline-none"
+            ddiSelectClassName="h-[52px] md:h-[64px] py-4 pl-[40px] pr-[28px] bg-[#D9CFC31A] rounded-l-[8px] border border-[#BDBCBC] border-r-[0px] text-white font-mulish font-medium text-[16px] leading-[145%] focus:outline-none appearance-none"
+            phoneInputClassName="w-full !h-[52px] md:!h-[64px] px-[16px] py-4 rounded-r-[8px] bg-[#FFFFFF1A] backdrop-blur-[20px] placeholder:text-white text-white font-mulish font-medium text-[16px] leading-[145%] focus:outline-none border border-[#BDBCBC] border-l-[0px]"
+            buttonClassName="mt-[12px] mb-[12px] w-full h-[52px] md:h-[64px] rounded-[8px] font-mulish font-extrabold text-[14px] md:text-[16px] leading-[145%] uppercase text-black transition-all hover:brightness-110 border border-[#FCF3D4] [background:linear-gradient(90deg,_#DFD2A7_0%,_#FCF3D4_100%)] shadow-[0px_6px_18.9px_0px_#F7EDCC85]"
+          />
 
           <p className="mt-16 text-left md:text-center font-spectral text-[20px] md:text-[30px] leading-[140%] md:leading-[40px] tracking-[0%] text-[#F4F0E1]">
             Existem pessoas com{" "}

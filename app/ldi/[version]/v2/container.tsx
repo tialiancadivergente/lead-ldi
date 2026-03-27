@@ -30,7 +30,7 @@ export default function ContainerTeste({
 	return (
 		<>
 			<>
-				<HeroSection />
+				<HeroSection formName={formName} onSubmit={onSubmit} submitError={submitError} />
 				<SecondSection />
 				<ThirdSection />
 				<FourthSection />
