@@ -1,10 +1,20 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
-import { handleScroll } from "@/lib/utils";
+import DialogCustom from "../../../components/dialog-custom/dialog-custom";
+import { LeadCaptureSubmitData } from "@/app/components/form/lead-capture-form";
 
-export default function FourthSection() {
+interface FourthSectionProps {
+  formName: string;
+  onSubmit: (data: LeadCaptureSubmitData) => void | Promise<void>;
+  submitError?: string | null;
+}
+
+export default function FourthSection({
+  formName,
+  onSubmit,
+  submitError,
+}: FourthSectionProps) {
   return (
     <section
       className="
@@ -37,20 +47,40 @@ export default function FourthSection() {
 
           <div className="font-spectral font-normal not-italic text-[16px] leading-[24px] tracking-[0] align-middle text-white flex flex-col gap-6 mt-[300px] md:mt-0 md:text-[18px] md:leading-[24px] md:gap-7">
             <p>
-              Mentor da Aliança Divergente, comunidade com mais de 200 mil aliados no Brasil e no mundo. Formado em Engenharia, Ramon descobriu depois dos 30 que assumir controle financeiro e multiplicar ganhos não é questão de capacidade, mas de corrigir as relações que geram padrões nocivos.
+              Mentor da Aliança Divergente, comunidade com mais de 200 mil
+              aliados no Brasil e no mundo. Formado em Engenharia, Ramon
+              descobriu depois dos 30 que assumir controle financeiro e
+              multiplicar ganhos não é questão de capacidade, mas de corrigir as
+              relações que geram padrões nocivos.
             </p>
 
             <p>
-              Com mais de 500K seguidores no Instagram e 46.9K no YouTube, Ramon desenvolveu um método sistemático para identificar e corrigir os padrões bloqueadores de permissão para você ter controle total sobre os acontecimentos da sua vida e ganhar mais dinheiro.
+              Com mais de 500K seguidores no Instagram e 46.9K no YouTube,
+              Ramon desenvolveu um método sistemático para identificar e
+              corrigir os padrões bloqueadores de permissão para você ter
+              controle total sobre os acontecimentos da sua vida e ganhar mais
+              dinheiro.
             </p>
 
             <p>
-              A missão de Ramon é clara: apoiar pessoas a corrigirem sua base interna para terem Permissão de multiplicar seus ganhos e oportunidades de sucesso. Se você quer destravar sua vida, O Levante dos Improváveis é o primeiro passo.
+              A missão de Ramon é clara: apoiar pessoas a corrigirem sua base
+              interna para terem Permissão de multiplicar seus ganhos e
+              oportunidades de sucesso. Se você quer destravar sua vida, O
+              Levante dos Improváveis é o primeiro passo.
             </p>
 
-            <button className="w-full max-w-[380px] h-[50px] bg-[#C0964B] text-white text-[14px] md:text-base uppercase font-bold mt-4 md:mt-8 transition-all duration-200 hover:bg-[#e9cb84] hover:text-black">
-              PARTICIPAR GRATUITAMENTE
-            </button>
+            <DialogCustom
+              btLabel="PARTICIPAR GRATUITAMENTE"
+              btClassName="w-full max-w-[380px] h-[50px] bg-[#C0964B] text-white text-[14px] md:text-base font-bold mt-4 md:mt-8 transition-all duration-200 hover:bg-[#e9cb84] hover:text-black"
+              formName={formName}
+              onSubmit={onSubmit}
+              submitError={submitError}
+              submitLabel="PARTICIPAR GRATUITAMENTE"
+              emailInputClassName="w-full h-[56px] md:h-[74px] px-[18px] md:px-[24px] rounded-[12px] border border-[#CFCFCF] bg-white placeholder:text-[#2B2B2B] text-[#111111] font-mulish font-normal text-[16px] md:text-[20px] leading-[140%] outline-none"
+              ddiSelectClassName="h-[56px] md:h-[74px] pl-[44px] pr-[30px] rounded-l-[12px] border border-[#CFCFCF] border-r-0 bg-white text-[#111111] font-mulish font-semibold text-[16px] md:text-[20px] leading-[140%] focus:outline-none appearance-none"
+              phoneInputClassName="w-full !h-[56px] md:!h-[74px] px-[18px] md:px-[24px] rounded-r-[12px] border border-[#CFCFCF] border-l-0 bg-white placeholder:text-[#2B2B2B] text-[#111111] font-mulish font-normal text-[16px] md:text-[20px] leading-[140%] focus:outline-none"
+              buttonClassName="mt-[16px] md:mt-[20px] mb-0 w-full h-[58px] md:h-[74px] rounded-[12px] bg-[#22C32E] font-mulish font-extrabold text-[15px] md:text-[20px] leading-[100%] uppercase text-white transition-all hover:brightness-105 border-0 shadow-none"
+            />
           </div>
         </div>
       </div>
