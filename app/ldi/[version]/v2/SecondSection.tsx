@@ -3,7 +3,6 @@
 import { handleScroll } from "@/lib/utils";
 import Image from "next/image";
 
-// Lista de objetos conforme detalhes da imagem fornecida
 const itemsToResolve = [
   {
     number: 1,
@@ -27,47 +26,91 @@ export default function SecondSection() {
   return (
     <section
       className={`
-				w-full
-				min-h-[459px]
-				h-[459px]
-				md:h-[1150px]
-				md:min-h-[1150px]
-				bg-[url('/images/v1/bg-two-mobile.webp')]
-				md:bg-[url('/images/v2/bg-second-fold.webp')]
-				bg-no-repeat
-				bg-center
-				bg-cover
-				flex
+        w-full
+        min-h-[1400px]
+        h-auto
+        md:h-[1150px]
+        md:min-h-[1150px]
+        bg-[url('/images/v2/bg_second_fold_mobile.webp')]
+        md:bg-[url('/images/v2/bg-second-fold.webp')]
+        bg-no-repeat
+        bg-top
+        md:bg-center
+        bg-cover
+        flex
         flex-col
-				justify-center
-				items-start
-				md:items-center
-			`}
+        justify-start
+        items-start
+        md:justify-center
+        md:items-center
+      `}
     >
-      <div className="w-full max-w-[1060px] mx-auto">
-        <div className="text-[#F4F0E1] font-spectral max-w-[667px] w-full">
-          <p className="font-spectral font-extrabold text-[40px] leading-[56px] tracking-[0%]">
-            O que elas fizeram de diferente?
+      <div className="w-full max-w-[1060px] mx-auto pb-12 md:pb-0">
+        <div className="text-[#F4F0E1] font-spectral w-full px-[42px] pt-[44px] md:max-w-[667px] md:px-0 md:pt-0">
+          <p className="w-[350px] max-w-full font-spectral font-extrabold text-[32px] leading-[120%] tracking-[0%] text-left md:w-auto md:text-[40px] md:leading-[56px]">
+            O que elas fizeram
+            <br />
+            de diferente?
           </p>
-          <p className="font-spectral font-normal not-italic text-[18px] leading-[24px] tracking-[0%] align-middle my-8">
-            <span className="font-bold">Identificaram e corrigiram</span> um tipo de relação que a maioria das pessoas nem sabe que existe – mas controla silenciosamente a forma como você lida com dinheiro, oportunidades e crescimento.
+
+          <p className="w-full font-spectral text-[16px] leading-[28px] tracking-[0%] text-left align-middle mt-6 md:my-8 md:text-[18px] md:leading-[24px]">
+            <span className="font-bold">Identificaram e corrigiram</span>{" "}
+            <span className="font-normal">
+              um tipo de relação que a maioria das pessoas nem sabe que existe –
+              mas controla silenciosamente a forma como você lida com dinheiro,
+              oportunidades e crescimento.
+            </span>
           </p>
-          <p className="font-spectral font-normal not-italic text-[40px] leading-[56px] tracking-[0%]">
-            O que você vai resolver durante <br /> <span className="font-extrabold">O Levante dos Improváveis:</span>
-          </p>
-          <div className="mt-8 flex flex-col gap-4">
-            {itemsToResolve.map((item) => (
-              <div
-                key={item.number}
-                className="bg-[url('/images/v2/bg-list.webp')] bg-no-repeat bg-center bg-cover w-[661px] h-[108px] py-7 px-12 flex items-center gap-8"
-              >
-                <p className="font-spectral font-semibold text-[58px] text-center text-[#006D71]">{item.number}</p>
-                <p className="font-spectral font-normal not-italic text-[18px] leading-[24px] tracking-[0%] align-middle text-[#104448]">{item.text}</p>
-              </div>
-            ))}
+
+          <div className="mt-[700px] md:mt-0">
+            <p className="w-[355px] max-w-full font-spectral font-normal not-italic text-[32px] leading-[100%] tracking-[0%] text-left md:w-auto md:text-[40px] md:leading-[56px]">
+              O que você vai resolver
+              <br />
+              durante{" "}
+              <span className="font-extrabold">
+                O Levante dos Improváveis:
+              </span>
+            </p>
+
+            <div className="mt-8 flex flex-col items-center gap-6 md:items-start md:gap-4">
+              {itemsToResolve.map((item) => (
+                <div
+                  key={item.number}
+                  className="
+                    w-[370px]
+                    min-h-[117px]
+                    px-5
+                    py-6
+                    flex
+                    items-center
+                    gap-4
+                    bg-[url('/images/v2/bg_list_mobile.png')]
+                    bg-no-repeat
+                    bg-center
+                    bg-cover
+
+                    md:w-[661px]
+                    md:h-[108px]
+                    md:px-12
+                    md:py-7
+                    md:gap-8
+                    md:bg-[url('/images/v2/bg-list.webp')]
+                  "
+                >
+                  <p className="font-spectral font-semibold text-[40px] md:text-[58px] text-center text-[#006D71]">
+                    {item.number}
+                  </p>
+
+                  <p className="font-spectral font-normal text-[14px] leading-[20px] md:text-[18px] md:leading-[24px] text-[#104448]">
+                    {item.text}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
-        <div className="flex justify-center items-center mt-24">
+
+        <div className="flex justify-center items-center mt-5 md:mt-24">
           <button className="w-full max-w-[300px] h-[50px] bg-[#C0964B] text-white text-sm font-bold mt-8 transition-all duration-200 hover:bg-[#e9cb84] hover:text-black">
             PARTICIPAR GRATUITAMENTE
           </button>

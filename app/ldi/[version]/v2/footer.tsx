@@ -31,7 +31,6 @@ export default function Footer() {
         "
       >
 
-        {/* LOGO */}
         <Image
           src="/images/ora/v1/logo_o_proximo_nivel.png"
           alt="Logo"
@@ -40,7 +39,6 @@ export default function Footer() {
           className="object-contain"
         />
 
-        {/* TEXTO */}
         <p
           className="
             font-raleway

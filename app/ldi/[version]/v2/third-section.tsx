@@ -15,33 +15,96 @@ export default function ThirdSection() {
     <section
       className={`
         w-full
-        min-h-[523px]
-        h-[523px]
+        min-h-[775px]
+        h-[775px]
         md:h-[758px]
         md:min-h-[758px]
         bg-[#104448]
         flex
         justify-center
-        items-center
+        items-start
+        md:items-center
       `}
     >
-      <div className="w-full max-w-[640px] mx-auto">
-        <p className="text-[#F4F0E1] font-spectral text-[20px] md:text-[40px] text-center leading-[125%] font-extrabold max-w-[667px] w-full mx-auto my-6">
-          Esse encontro é para quem:
+      <div className="
+        w-full
+        max-w-[640px]
+        mx-auto
+
+        px-[42px]     
+        md:px-0
+      ">
+
+
+        <p className="
+          text-[#F4F0E1]
+          font-spectral
+          font-extrabold
+          text-[32px]
+          leading-[100%]
+          text-left
+
+          mt-[60px]
+
+          md:text-[40px]
+          md:text-center
+          md:mt-0
+        ">
+          Esse encontro <br />
+          é para quem:
         </p>
-        <div className="flex flex-col gap-4 mt-[72px]">
+
+        <div className="
+          flex
+          flex-col
+          gap-6     
+          mt-[48px]
+
+          md:gap-4
+          md:mt-[72px]
+        ">
           {listaEncontro.map((frase, idx) => (
-            <div key={idx} className="flex items-center gap-4">
-              <CheckCircle2 size={40} className="text-[#C0964B]" />
-              <p className="text-[#F4F0E1] font-spectral font-bold text-[24px] leading-[32px] tracking-[0%] flex-1">{frase}</p>
+            <div key={idx} className="flex items-start gap-4">
+
+              <CheckCircle2 
+                size={32}   
+                className="text-[#C0964B] mt-[4px] flex-shrink-0"
+              />
+
+              <p className="
+                text-[#F4F0E1]
+                font-spectral
+                font-bold
+                text-[20px]
+                leading-[32px]
+                text-left
+
+                md:text-[24px]
+              ">
+                {frase}
+              </p>
             </div>
           ))}
         </div>
-        <div className="flex justify-center items-center mt-16">
-          <button className="w-full max-w-[380px] h-[50px] bg-[#C0964B] text-white text-base uppercase font-bold mt-8 transition-all duration-200 hover:bg-[#e9cb84] hover:text-black">
+
+        <div className="flex justify-center items-center mt-[56px] md:mt-16">
+          <button className="
+            w-full
+            max-w-[345px]   
+            h-[50px]
+            bg-[#C0964B]
+            text-white
+            text-[14px]
+            font-bold
+            uppercase
+            transition-all duration-200
+            hover:bg-[#e9cb84]
+            hover:text-black
+          ">
             Quero fazer meu diagnóstico
           </button>
         </div>
+
       </div>
     </section>
   );
