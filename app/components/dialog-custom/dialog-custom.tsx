@@ -33,30 +33,35 @@ export default function DialogCustom({
   emailInputClassName,
   ddiSelectClassName,
   phoneInputClassName,
-  buttonClassName
+  buttonClassName,
 }: DialogCustomProps) {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <button className={btClassName}>
+        <button className={`${btClassName} uppercase`}>
           {btLabel}
         </button>
       </DialogTrigger>
 
-      <DialogContent className="bg-white">
-        <DialogHeader>
-          <DialogTitle>Preencha com seus dados para participar</DialogTitle>
-          <DialogDescription>
-            <LeadCaptureForm
-              formName={formName}
-              onSubmit={onSubmit}
-              submitError={submitError}
-              submitLabel={submitLabel}
-              emailInputClassName={emailInputClassName}
-              ddiSelectClassName={ddiSelectClassName}
-              phoneInputClassName={phoneInputClassName}
-              buttonClassName={buttonClassName}
-            />
+      <DialogContent className="w-[calc(100%-24px)] max-w-[640px] rounded-[16px] border border-[#D9D9D9] bg-[#F5F5F5] p-[16px] sm:p-[20px] md:p-[24px] lg:p-[32px]">
+        <DialogHeader className="gap-[20px] md:gap-[24px] lg:gap-[40px]">
+          <DialogTitle className="font-mulish font-semibold text-[#111111] text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] leading-[100%] tracking-[0] text-center">
+            Preencha com seus dados para participar
+          </DialogTitle>
+
+          <DialogDescription asChild>
+            <div>
+              <LeadCaptureForm
+                formName={formName}
+                onSubmit={onSubmit}
+                submitError={submitError}
+                submitLabel={submitLabel}
+                emailInputClassName={emailInputClassName}
+                ddiSelectClassName={ddiSelectClassName}
+                phoneInputClassName={phoneInputClassName}
+                buttonClassName={buttonClassName}
+              />
+            </div>
           </DialogDescription>
         </DialogHeader>
       </DialogContent>

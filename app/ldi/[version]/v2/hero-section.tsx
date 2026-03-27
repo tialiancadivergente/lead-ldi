@@ -40,7 +40,6 @@ interface HeroSectionProps {
 }
 
 export default function HeroSection({ formName, onSubmit, submitError }: HeroSectionProps) {
-
   return (
     <section
       id="hero"
@@ -67,7 +66,7 @@ export default function HeroSection({ formName, onSubmit, submitError }: HeroSec
             <span className="block md:inline">ONLINE - AO VIVO - GRATUITO.</span>
           </p>
 
-          <div className="mt-8 text-left md:text-center font-spectral font-bold text-[24px] md:text-4xl leading-[30px] md:leading-normal tracking-[-0.01em]">
+          <div className="mt-8 text-left md:text-center font-spectral font-bold text-[24px] md:text-4xl leading-[30px] md:leading-[42px] tracking-[-0.01em]">
             <p>
               Evento para{" "}
               <span className="text-[#E8C88E]">destravar seu dinheiro,</span>{" "}
@@ -75,7 +74,7 @@ export default function HeroSection({ formName, onSubmit, submitError }: HeroSec
               bloqueio na sua vida.
             </p>
 
-            <p className="mt-4">
+            <p className="mt-3 md:mt-2">
               Junte-se a nos e seja mais um improvável que deu certo!
             </p>
           </div>
@@ -84,14 +83,14 @@ export default function HeroSection({ formName, onSubmit, submitError }: HeroSec
             formName={formName}
             onSubmit={onSubmit}
             submitError={submitError}
-            submitLabel="Participar gratuitamente"
-            emailInputClassName="w-full h-[52px] md:h-[64px] px-[16px] rounded-[8px] border border-[#BDBCBC] bg-[#FFFFFF1A] backdrop-blur-[20px] placeholder:text-white text-white font-mulish font-medium text-[16px] leading-[145%] outline-none"
-            ddiSelectClassName="h-[52px] md:h-[64px] py-4 pl-[40px] pr-[28px] bg-[#D9CFC31A] rounded-l-[8px] border border-[#BDBCBC] border-r-[0px] text-white font-mulish font-medium text-[16px] leading-[145%] focus:outline-none appearance-none"
-            phoneInputClassName="w-full !h-[52px] md:!h-[64px] px-[16px] py-4 rounded-r-[8px] bg-[#FFFFFF1A] backdrop-blur-[20px] placeholder:text-white text-white font-mulish font-medium text-[16px] leading-[145%] focus:outline-none border border-[#BDBCBC] border-l-[0px]"
-            buttonClassName="mt-[12px] mb-[12px] w-full h-[52px] md:h-[64px] rounded-[8px] font-mulish font-extrabold text-[14px] md:text-[16px] leading-[145%] uppercase text-black transition-all hover:brightness-110 border border-[#FCF3D4] [background:linear-gradient(90deg,_#DFD2A7_0%,_#FCF3D4_100%)] shadow-[0px_6px_18.9px_0px_#F7EDCC85]"
+            submitLabel="PARTICIPAR GRATUITAMENTE"
+            emailInputClassName="w-full h-[56px] md:h-[74px] px-[18px] md:px-[24px] rounded-[12px] border border-[#CFCFCF] bg-white placeholder:text-[#2B2B2B] text-[#111111] font-mulish font-normal text-[16px] md:text-[20px] leading-[140%] outline-none"
+            ddiSelectClassName="h-[56px] md:h-[74px] pl-[44px] pr-[30px] rounded-l-[12px] border border-[#CFCFCF] border-r-0 bg-white text-[#111111] font-mulish font-semibold text-[16px] md:text-[20px] leading-[140%] focus:outline-none appearance-none"
+            phoneInputClassName="w-full !h-[56px] md:!h-[74px] px-[18px] md:px-[24px] rounded-r-[12px] border border-[#CFCFCF] border-l-0 bg-white placeholder:text-[#2B2B2B] text-[#111111] font-mulish font-normal text-[16px] md:text-[20px] leading-[140%] focus:outline-none"
+            buttonClassName="mt-[16px] md:mt-[20px] mb-0 w-full h-[58px] md:h-[74px] rounded-[12px] bg-[#22C32E] font-mulish font-extrabold text-[15px] md:text-[20px] leading-[100%] uppercase text-white transition-all hover:brightness-105 border-0 shadow-none"
           />
 
-          <p className="mt-16 text-left md:text-center font-spectral text-[20px] md:text-[30px] leading-[140%] md:leading-[40px] tracking-[0%] text-[#F4F0E1]">
+          <p className="mt-16 text-left md:text-left font-spectral text-[20px] md:text-[30px] leading-[140%] md:leading-[36px] tracking-[0%] text-[#F4F0E1]">
             Existem pessoas com{" "}
             <span className="font-bold">menos condição que você</span> que
             conseguiram destravar a vida financeira e construir liberdade real.

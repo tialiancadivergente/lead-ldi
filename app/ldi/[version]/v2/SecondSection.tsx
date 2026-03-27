@@ -48,9 +48,14 @@ export default function SecondSection() {
       <div className="w-full max-w-[1060px] mx-auto pb-12 md:pb-0">
         <div className="text-[#F4F0E1] font-spectral w-full px-[42px] pt-[44px] md:max-w-[667px] md:px-0 md:pt-0">
           <p className="w-[350px] max-w-full font-spectral font-extrabold text-[32px] leading-[120%] tracking-[0%] text-left md:w-auto md:text-[40px] md:leading-[56px]">
-            O que elas fizeram
-            <br />
-            de diferente?
+            <span className="md:hidden">
+              O que elas fizeram
+              <br />
+              de diferente?
+            </span>
+            <span className="hidden md:inline">
+              O que elas fizeram de diferente?
+            </span>
           </p>
 
           <p className="w-full font-spectral text-[16px] leading-[28px] tracking-[0%] text-left align-middle mt-6 md:my-8 md:text-[18px] md:leading-[24px]">
@@ -64,11 +69,21 @@ export default function SecondSection() {
 
           <div className="mt-[700px] md:mt-0">
             <p className="w-[355px] max-w-full font-spectral font-normal not-italic text-[32px] leading-[100%] tracking-[0%] text-left md:w-auto md:text-[40px] md:leading-[56px]">
-              O que você vai resolver
-              <br />
-              durante{" "}
-              <span className="font-extrabold">
-                O Levante dos Improváveis:
+              <span className="md:hidden">
+                O que você vai resolver
+                <br />
+                durante{" "}
+                <span className="font-extrabold">
+                  O Levante dos Improváveis:
+                </span>
+              </span>
+
+              <span className="hidden md:inline">
+                O que você vai resolver durante
+                <br />
+                <span className="font-extrabold">
+                  O Levante dos Improváveis:
+                </span>
               </span>
             </p>
 
@@ -90,11 +105,15 @@ export default function SecondSection() {
                     bg-cover
 
                     md:w-[661px]
+                    md:min-h-[108px]
                     md:h-[108px]
-                    md:px-12
-                    md:py-7
+                    md:px-[40px]
+                    md:py-0
                     md:gap-8
                     md:bg-[url('/images/v2/bg-list.webp')]
+                    md:bg-no-repeat
+                    md:bg-center
+                    md:bg-[length:661px_108px]
                   "
                 >
                   <p className="font-spectral font-semibold text-[40px] md:text-[58px] text-center text-[#006D71]">
