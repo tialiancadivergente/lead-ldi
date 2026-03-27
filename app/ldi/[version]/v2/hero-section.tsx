@@ -47,7 +47,7 @@ export default function HeroSection({ formName, onSubmit, submitError }: HeroSec
     >
       <div className="relative left-1/2 right-1/2 ml-[-50vw] mr-[-50vw] w-screen h-[64px] md:h-[48px] bg-[#C0964B] flex items-center justify-center">
         <p className="w-full max-w-[348px] md:max-w-[1088px] text-center font-spectral font-bold text-[18px] md:text-[24px] leading-[120%] md:leading-[36px] text-white px-4 py-2 md:py-0">
-          Você vai receber gratuitamente um Diagnóstico de Bloqueio de Permissão!
+          Você vai receber gratuitamente um Diagnóstico de Desbloqueio.
         </p>
       </div>
 
