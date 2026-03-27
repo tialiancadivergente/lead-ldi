@@ -2,6 +2,8 @@
 
 import { handleScroll } from "@/lib/utils";
 import Image from "next/image";
+import DialogCustom from "../../../components/dialog-custom/dialog-custom";
+import { LeadCaptureSubmitData } from "@/app/components/form/lead-capture-form";
 
 const itemsToResolve = [
   {
@@ -22,7 +24,17 @@ const itemsToResolve = [
   },
 ];
 
-export default function SecondSection() {
+interface SecondSectionProps {
+  formName: string;
+  onSubmit: (data: LeadCaptureSubmitData) => void | Promise<void>;
+  submitError?: string | null;
+}
+
+export default function SecondSection({
+  formName,
+  onSubmit,
+  submitError,
+}: SecondSectionProps) {
   return (
     <section
       className={`
@@ -130,9 +142,18 @@ export default function SecondSection() {
         </div>
 
         <div className="flex justify-center items-center mt-5 md:mt-24">
-          <button className="w-full max-w-[300px] h-[50px] bg-[#C0964B] text-white text-sm font-bold mt-8 transition-all duration-200 hover:bg-[#e9cb84] hover:text-black">
-            PARTICIPAR GRATUITAMENTE
-          </button>
+          <DialogCustom
+            btLabel="PARTICIPAR GRATUITAMENTE"
+            btClassName="w-full max-w-[300px] h-[50px] bg-[#C0964B] text-white text-sm font-bold mt-8 transition-all duration-200 hover:bg-[#e9cb84] hover:text-black"
+            formName={formName}
+            onSubmit={onSubmit}
+            submitError={submitError}
+            submitLabel="PARTICIPAR GRATUITAMENTE"
+            emailInputClassName="w-full h-[56px] md:h-[74px] px-[18px] md:px-[24px] rounded-[12px] border border-[#CFCFCF] bg-white placeholder:text-[#2B2B2B] text-[#111111] font-mulish font-normal text-[16px] md:text-[20px] leading-[140%] outline-none"
+            ddiSelectClassName="h-[56px] md:h-[74px] pl-[44px] pr-[30px] rounded-l-[12px] border border-[#CFCFCF] border-r-0 bg-white text-[#111111] font-mulish font-semibold text-[16px] md:text-[20px] leading-[140%] focus:outline-none appearance-none"
+            phoneInputClassName="w-full !h-[56px] md:!h-[74px] px-[18px] md:px-[24px] rounded-r-[12px] border border-[#CFCFCF] border-l-0 bg-white placeholder:text-[#2B2B2B] text-[#111111] font-mulish font-normal text-[16px] md:text-[20px] leading-[140%] focus:outline-none"
+            buttonClassName="mt-[16px] md:mt-[20px] mb-0 w-full h-[58px] md:h-[74px] rounded-[12px] bg-[#22C32E] font-mulish font-extrabold text-[15px] md:text-[20px] leading-[100%] uppercase text-white transition-all hover:brightness-105 border-0 shadow-none"
+          />
         </div>
       </div>
     </section>
