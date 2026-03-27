@@ -292,7 +292,9 @@ export default function ContainerQuest({
             className="text-gray-400 text-sm md:text-base text-center"
             style={{ color: "#fff", fontFamily: '"Spectral", Sans-serif' }}
           >
-            © 2026 Aliança Divergente{typeof window !== "undefined" && window.innerWidth >= 768 ? ' —' : ' '}
+            © 2026 Aliança Divergente
+            <span className="hidden md:inline"> {" — "}</span>
+            <span className="md:hidden"> </span>
             <span className="block md:inline">
               <span className="hidden md:inline"> </span>
               Todos os Direitos Reservados
