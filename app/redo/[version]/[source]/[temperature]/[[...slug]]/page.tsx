@@ -12,11 +12,12 @@ interface RedoShortRoutePageProps {
 export default async function RedoShortRoutePage({
   params,
 }: RedoShortRoutePageProps) {
-  const { source, temperature } = await params;
+  const { version, source, temperature } = await params;
 
   return (
     <RedoPageClient
       initialSource={source}
+      initialVersion={version}
       initialTemperature={temperature}
     />
   );

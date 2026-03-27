@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import type { ReactNode } from "react";
 import { Button } from "@/components/ui/button";
 import { CustomRadio } from "@/app/components/custom-input";
 import {
@@ -30,6 +31,9 @@ interface ContainerQuestProps {
   isSubmittingAnswers: boolean;
   whatsappUrl: string;
   theme: string;
+  hideQuestionActions?: boolean;
+  finalActionLabel?: string;
+  footerContent?: ReactNode;
 }
 
 export default function ContainerQuest({
@@ -51,6 +55,9 @@ export default function ContainerQuest({
   isSubmittingAnswers,
   whatsappUrl,
   theme,
+  hideQuestionActions = false,
+  finalActionLabel,
+  footerContent,
 }: ContainerQuestProps) {
   const progress = totalQuestions
     ? ((currentQuestion + 1) / totalQuestions) * 100
@@ -204,33 +211,37 @@ export default function ContainerQuest({
                           />
                         )}
 
-                        <div className="grid grid-cols-2 gap-3 md:gap-5 mt-5 md:mt-7">
-                          {currentQuestion > 0 ? (
+                        {!hideQuestionActions ? (
+                          <div className="grid grid-cols-2 gap-3 md:gap-5 mt-5 md:mt-7">
+                            {currentQuestion > 0 ? (
+                              <Button
+                                variant="outline"
+                                onClick={handleBack}
+                                className="bg-transparent border-gray-700 text-white hover:text-white hover:bg-gray-800 md:text-base font-black min-h-[47px] rounded-[41px] font-mulish"
+                              >
+                                VOLTAR
+                              </Button>
+                            ) : (
+                              <div />
+                            )}
                             <Button
-                              variant="outline"
-                              onClick={handleBack}
-                              className="bg-transparent border-gray-700 text-white hover:text-white hover:bg-gray-800 md:text-base font-black min-h-[47px] rounded-[41px] font-mulish"
+                              onClick={handleNext}
+                              disabled={!isCurrentQuestionAnswered || isSubmittingAnswers}
+                              className={`bg-[#936C27] bg-[radial-gradient(circle,_#E2CA9E_25%,_#936C27_100%)] font-black min-h-[47px] rounded-[41px] font-mulish text-[#02161C] text-sm md:text-base transition-colors duration-200 ${currentQuestion === 0 ? "col-span-2" : ""
+                                } hover:bg-[#B98A41] hover:bg-[radial-gradient(circle,_#ECD7B0_25%,_#B98A41_100%)]`}
                             >
-                              VOLTAR
+                              {finalActionLabel
+                                ? finalActionLabel
+                                : isLastQuestion
+                                  ? isSubmittingAnswers
+                                    ? "ENVIANDO..."
+                                    : submitSuccess
+                                      ? "ENVIADO"
+                                      : "ENVIAR"
+                                  : "PRÓXIMA"}
                             </Button>
-                          ) : (
-                            <div />
-                          )}
-                          <Button
-                            onClick={handleNext}
-                            disabled={!isCurrentQuestionAnswered || isSubmittingAnswers}
-                            className={`bg-[#936C27] bg-[radial-gradient(circle,_#E2CA9E_25%,_#936C27_100%)] font-black min-h-[47px] rounded-[41px] font-mulish text-[#02161C] text-sm md:text-base transition-colors duration-200 ${currentQuestion === 0 ? "col-span-2" : ""
-                              } hover:bg-[#B98A41] hover:bg-[radial-gradient(circle,_#ECD7B0_25%,_#B98A41_100%)]`}
-                          >
-                            {isLastQuestion
-                              ? isSubmittingAnswers
-                                ? "ENVIANDO..."
-                                : submitSuccess
-                                  ? "ENVIADO"
-                                  : "ENVIAR"
-                              : "PRÓXIMA"}
-                          </Button>
-                        </div>
+                          </div>
+                        ) : null}
                       </>
                     )}
                   </div>
@@ -262,17 +273,23 @@ export default function ContainerQuest({
             </div>
           </div>
         </div>
-        <p className="text-white text-xs text-center mb-4 md:mb-5 max-w-[400px] mx-auto">
-          Após responder as questões, toque no botão abaixo
-          para receber o link e materiais do evento:
-        </p>
+        {footerContent ? (
+          footerContent
+        ) : (
+          <>
+            <p className="text-white text-xs text-center mb-4 md:mb-5 max-w-[400px] mx-auto">
+              Após responder as questões, toque no botão abaixo
+              para receber o link e materiais do evento:
+            </p>
 
-        <Button
-          className="w-full mb-10 max-w-sm py-4 md:py-6 text-sm md:text-base hover:opacity-90 transition-opacity duration-300 rounded-3xl bg-[#936C27] bg-[radial-gradient(circle,_#E2CA9E_25%,_#936C27_100%)]"
-          onClick={() => window.open(whatsappUrl, "_blank")}
-        >
-          Entrar no Grupo
-        </Button>
+            <Button
+              className="w-full mb-10 max-w-sm py-4 md:py-6 text-sm md:text-base hover:opacity-90 transition-opacity duration-300 rounded-3xl bg-[#936C27] bg-[radial-gradient(circle,_#E2CA9E_25%,_#936C27_100%)]"
+              onClick={() => window.open(whatsappUrl, "_blank")}
+            >
+              Entrar no Grupo
+            </Button>
+          </>
+        )}
         <footer className="w-full flex items-center justify-center flex-col mb-20 gap-8">
           <div className="mb-6 md:mb-8 flex justify-center mt-6">
             <Image
