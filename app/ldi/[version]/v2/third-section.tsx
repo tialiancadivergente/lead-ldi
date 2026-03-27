@@ -44,7 +44,7 @@ export default function ThirdSection() {
           leading-[100%]
           text-left
 
-          mt-[60px]
+          mt-[30px]
 
           md:text-[40px]
           md:text-center

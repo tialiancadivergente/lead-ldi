@@ -35,7 +35,7 @@ export default function FourthSection() {
             Ramon Galimberti
           </p>
 
-          <div className="font-spectral font-normal not-italic text-[16px] leading-[24px] tracking-[0] align-middle text-white flex flex-col gap-6 mt-[400px] md:mt-0 md:text-[18px] md:leading-[24px] md:gap-7">
+          <div className="font-spectral font-normal not-italic text-[16px] leading-[24px] tracking-[0] align-middle text-white flex flex-col gap-6 mt-[300px] md:mt-0 md:text-[18px] md:leading-[24px] md:gap-7">
             <p>
               Mentor da Aliança Divergente, comunidade com mais de 200 mil aliados no Brasil e no mundo. Formado em Engenharia, Ramon descobriu depois dos 30 que assumir controle financeiro e multiplicar ganhos não é questão de capacidade, mas de corrigir as relações que geram padrões nocivos.
             </p>
