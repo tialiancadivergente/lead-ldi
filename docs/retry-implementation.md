@@ -33,12 +33,11 @@ Provide a standalone retry route that reuses the existing quiz layout and questi
    - phone
    - answers
    - retry metadata
+8. Removed the generic `/redo` entry, leaving only the compact route format as the official manual entry.
 
 ### Remaining
 
-1. Validate the organic route end-to-end in the browser.
-2. Confirm whether organic should remain without GTM.
-3. Decide the final WhatsApp URL convention the team will send manually.
+1. Confirm whether organic should remain without GTM.
 
 ## Final Flow
 
@@ -73,6 +72,7 @@ Notes:
 - `t` resolves to traffic
 - `o` resolves to organic
 - the last segment is the temperature fallback used by the route
+- this is the only supported manual route pattern
 
 ## Configuration
 
@@ -98,7 +98,6 @@ File:
 
 ## Files Involved
 
-- `app/redo/page.tsx`
 - `app/redo/RedoPageClient.tsx`
 - `app/redo/[version]/[source]/[temperature]/[[...slug]]/page.tsx`
 - `app/components/RedoTracking.tsx`
