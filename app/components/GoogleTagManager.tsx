@@ -39,6 +39,8 @@ const GoogleTagManager = () => {
     const gtmIdByPath = getGtmIdByPathname(normalizedPathname);
     const gtmId = gtmIdByPath !== defaultGtmId ? gtmIdByPath : defaultGtmId;
 
+    console.log("gtmId ===>", gtmId);
+
     TagManager.initialize({ gtmId });
   }, [pathname, temperature]);
 
