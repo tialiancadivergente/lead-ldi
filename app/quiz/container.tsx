@@ -60,8 +60,8 @@ export default function ContainerQuest({
   hideQuestionActions = false,
   finalActionLabel,
   footerContent,
-  progressTextClassName = "text-[#F8FAF4]",
-  progressFillClassName = "bg-gradient-to-r from-[#0A4A2E] to-[#136C44] shadow-[0px_0px_28px_0px_rgba(19,108,68,0.3)]",
+  progressTextClassName = "text-[#003036]",
+  progressFillClassName = "bg-gradient-to-r from-[#2DF289] to-[#75FFB6] shadow-[0px_0px_40px_0px_rgba(105,253,174,0.30)]",
 }: ContainerQuestProps) {
   const progress = totalQuestions
     ? ((currentQuestion + 1) / totalQuestions) * 100
