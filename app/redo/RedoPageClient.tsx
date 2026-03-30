@@ -576,6 +576,8 @@ function RedoPageContent({
         isSubmittingAnswers={isSubmittingAnswers}
         whatsappUrl={whatsappUrl}
         theme={theme}
+        progressTextClassName="text-[#F8FAF4]"
+        progressFillClassName="bg-gradient-to-r from-[#0A4A2E] to-[#136C44] shadow-[0px_0px_28px_0px_rgba(19,108,68,0.3)]"
         finalActionLabel={
           currentQuestion === questions.length - 1 ? "CONTINUAR" : undefined
         }
