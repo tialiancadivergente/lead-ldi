@@ -23,7 +23,7 @@ export default function HeroSection({
   return (
     <section
       id="hero"
-      className="relative h-[692px] md:min-h-[924px] md:h-[924px] flex flex-col justify-start overflow-hidden bg-[#071117] bg-[url('/images/v1/bg-mobile5.png')] md:bg-[url('/images/v1/bg.webp')] bg-cover bg-center px-4 pt-5 pb-6 md:p-0"
+      className="relative h-[881px] md:min-h-[924px] md:h-[924px] flex flex-col justify-start overflow-hidden bg-[#071117] bg-[url('/images/v1/bg-mobile6.png')] md:bg-[url('/images/v1/bg.webp')] bg-cover bg-center px-4 pt-5 pb-6 md:p-0"
     >
       <div className="w-full max-w-[349px] md:max-w-[527px] flex flex-col items-center md:items-start text-left md:text-left mt-0 md:mt-[60px] md:ml-[100px] mx-auto md:mx-0">
         <div className="w-full justify-start hidden md:flex">
