@@ -105,7 +105,7 @@ function RedoPageContent({
   }, []);
 
   useEffect(() => {
-    const temperatureParam = searchParams.get("temperature") || initialTemperature;
+    const temperatureParam = searchParams.get("temperature") ?? initialTemperature ?? null;
     setTemperatura(temperatureParam);
   }, [initialTemperature, searchParams]);
 
