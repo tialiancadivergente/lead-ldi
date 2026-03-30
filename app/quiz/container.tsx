@@ -109,13 +109,13 @@ export default function ContainerQuest({
               <div className="my-10 md:my-16 min-h-[50px] ">
                 <div className="relative w-full overflow-hidden rounded-lg min-h-[50px] border border-[#737373] bg-[#D3CAC033]">
                   <div
-                    className="absolute inset-y-0 left-0 min-h-[50px] bg-gradient-to-r from-[#2DF289] to-[#75FFB6] shadow-[0px_0px_40px_0px_rgba(105,253,174,0.30)] transition-all duration-300"
+                    className="absolute inset-y-0 left-0 min-h-[50px] bg-gradient-to-r from-[#127942] to-[#127942] shadow-[0px_0px_40px_0px_rgba(105,253,174,0.30)] transition-all duration-300"
                     style={{
                       width: `${Math.min(100, Math.max(0, progress))}%`,
                     }}
                   />
                   <p
-                    className="relative z-10 px-5 py-3 text-left text-sm md:text-[18px] font-bold text-[#003036] font-mulish min-h-[50px] "
+                    className="relative z-10 px-5 py-3 text-left text-sm md:text-[18px] font-bold text-[#FFFFFF] font-mulish min-h-[50px] "
                   >
                     Quase lá! Siga os próximos passos para finalizar a sua inscrição.
                   </p>
