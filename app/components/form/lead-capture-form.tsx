@@ -133,7 +133,11 @@ export function LeadCaptureForm({
             {...register("ddi")}
           >
             {PHONE_DDI_OPTIONS.map((option) => (
-              <option key={option.value} value={option.value}>
+              <option
+                key={option.value}
+                value={option.value}
+                style={{ color: "#000000", backgroundColor: "#ffffff" }}
+              >
                 {option.label}
               </option>
             ))}

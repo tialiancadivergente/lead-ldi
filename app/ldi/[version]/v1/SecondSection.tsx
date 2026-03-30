@@ -35,9 +35,7 @@ export default function SecondSection() {
 				<div className="md:block hidden md:text-[40px] text-[20px] font-spectral font-bold text-[#C0964B] leading-[120%]">
 					O QUE REALMENTE TRAVA SUA VIDA DEPOIS DOS 30 SÃO AS RELAÇÕES QUE VOCÊ AINDA NÃO SABE COMO CORRIGIR.
 				</div>
-				<p className="text-[#F4F0E1] font-mulish text-[16px] md:text-[18px] leading-[125%] font-bold max-w-[667px] w-full mx-auto mb-10 md:my-10">
-					Este é um evento de 3 dias para você que já tentou de tudo e continua no mesmo lugar – mas agora está pronto para se levantar contra os padrões que travam seu dinheiro, decisões e liberdade.
-				</p>
+
 				<Image
 					src="/images/v1/risk.png"
 					alt="Risk"
