@@ -48,7 +48,7 @@ export default function SecondSection() {
 					que conseguiram destravar a vida financeira e construir liberdade real. Elas não eram as mais preparadas.
 				</p>
 				<p className="text-[#D3CAC0] font-spectral text-[16px] md:text-[32px] leading-[125%] font-bold w-full my-10 md:hidden">
-					Existem pessoas com <span className="text-[#C0964B] uppercase">menos condição que você</span>
+					Existem pessoas com <span className="text-[#C0964B] uppercase">menos condição que você</span>{" "}
 					que conseguiram destravar a vida financeira e construir liberdade real. Elas não eram as mais preparadas.
 				</p>
 				<p className="text-[#D3CAC0] font-spectral text-[16px] md:text-[32px] leading-[125%] font-bold w-full">
