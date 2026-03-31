@@ -34,8 +34,6 @@ interface ContainerQuestProps {
   hideQuestionActions?: boolean;
   finalActionLabel?: string;
   footerContent?: ReactNode;
-  progressTextClassName?: string;
-  progressFillClassName?: string;
 }
 
 export default function ContainerQuest({
@@ -60,8 +58,6 @@ export default function ContainerQuest({
   hideQuestionActions = false,
   finalActionLabel,
   footerContent,
-  progressTextClassName = "text-[#003036]",
-  progressFillClassName = "bg-gradient-to-r from-[#2DF289] to-[#75FFB6] shadow-[0px_0px_40px_0px_rgba(105,253,174,0.30)]",
 }: ContainerQuestProps) {
   const progress = totalQuestions
     ? ((currentQuestion + 1) / totalQuestions) * 100
@@ -113,13 +109,16 @@ export default function ContainerQuest({
               <div className="my-10 md:my-16 min-h-[50px] ">
                 <div className="relative w-full overflow-hidden rounded-lg min-h-[50px] border border-[#737373] bg-[#D3CAC033]">
                   <div
-                    className={`absolute inset-y-0 left-0 min-h-[50px] transition-all duration-300 ${progressFillClassName}`}
+                    className="absolute inset-y-0 left-0 min-h-[50px] transition-all duration-300 shadow-[0px_0px_28px_0px_rgba(24,138,84,0.28)]"
                     style={{
                       width: `${Math.min(100, Math.max(0, progress))}%`,
+                      background:
+                        "linear-gradient(90deg, #0E5D3A 0%, #188A54 100%)",
                     }}
                   />
                   <p
-                    className={`relative z-10 min-h-[50px] px-5 py-3 text-left text-sm font-bold font-mulish md:text-[18px] ${progressTextClassName}`}
+                    className="relative z-10 min-h-[50px] px-5 py-3 text-left text-sm font-bold font-mulish md:text-[18px]"
+                    style={{ color: "#F4F6EE" }}
                   >
                     Quase lá! Siga os próximos passos para finalizar a sua inscrição.
                   </p>

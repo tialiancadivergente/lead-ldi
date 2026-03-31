@@ -437,8 +437,6 @@ function QuizNewPageContent() {
       isSubmittingAnswers={isSubmittingAnswers}
       whatsappUrl={whatsappUrl}
       theme={theme}
-      progressTextClassName="text-[#F4F6EE]"
-      progressFillClassName="bg-gradient-to-r from-[#0E5D3A] to-[#188A54] shadow-[0px_0px_28px_0px_rgba(24,138,84,0.28)]"
     />
   );
 }
