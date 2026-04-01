@@ -34,27 +34,39 @@ export default function FourthSection() {
 					<p className="text-[#D3CAC0] font-spectral text-[25px] md:text-[35px] text-center md:text-left leading-[125%] font-bold -mt-3 md:mt-0">
 						QUEM VAI SER O SEU MENTOR NESSA JORNADA?
 					</p>
+
 					<div className="mt-[450px] md:mt-0 w-full max-w-[350px] mx-auto flex flex-col gap-4 md:max-w-[517px]">
 						<p className="text-[#C0964B] font-spectral text-[30px] text-left leading-[125%] font-bold md:mt-0">
 							Ramon Galimberti
 						</p>
-						<p className="text-[#F4F0E1] font-mulish text-[16px] text-left leading-[135%] font-semibold">
-							Mentor da Aliança Divergente, comunidade com mais de 200 mil aliados no Brasil e no mundo. Formado em Engenharia, Ramon descobriu depois dos 30 que assumir controle financeiro e multiplicar ganhos não é questão de capacidade, mas de corrigir as relações que geram padrões nocivos.
+
+						{/* PARÁGRAFO 1 */}
+						<p className="text-[#F4F0E1] font-mulish text-[13px] text-left leading-[135%] font-semibold">
+							Engenheiro, mestre e mentor de desenvolvimento humano. Durante muito tempo, viveu a frustração de se esforçar, tentar, insistir — e mesmo assim ver a vida parar no quase. O dinheiro não permanecia, os planos não se firmavam, o relacionamento não deu certo e ele chegou a usar o ticket do pai para fazer compra no mercado e virar o mês. Era divorciado, estava travado em várias áreas da vida e carregava a sensação de que fazia muito, mas avançava pouco.
 						</p>
-						<p className="text-[#F4F0E1] font-mulish text-[16px] text-left leading-[135%] font-semibold">
-							<span className="text-[#C0964B]">Com 46.9K seguidores no YouTube e 280 vídeos,</span> Ramon desenvolveu um método sistemático para identificar e corrigir os padrões bloqueadores de permissão para você ter controle total sobre os acontecimentos da sua vida e ganhar mais dinheiro.
+
+						{/* PARÁGRAFO 2 COM DESTAQUE */}
+						<p className="text-[#F4F0E1] font-mulish text-[13px] text-left leading-[135%] font-semibold">
+							Foi na busca por entender por que isso acontecia que Ramon encontrou uma resposta que mudou sua história. A partir daí, uniu sua base lógica em engenharia, seu olhar para o comportamento humano e sua experiência prática para desenvolver uma forma própria de identificar e corrigir os padrões invisíveis que travam dinheiro, relacionamentos, decisões e liberdade.{" "}
+							<span className="text-[#C0964B]">
+								Por que pessoas capazes continuam presas no quase.
+							</span>
 						</p>
-						<p className="text-[#F4F0E1] font-mulish text-[16px] text-left leading-[135%] font-semibold">
-							A missão de Ramon é clara: ajudar pessoas a corrigirem sua base interna para terem permissão de multiplicar seus ganhos e oportunidades de sucesso. Se você quer destravar sua vida, O Levante dos Improváveis é o primeiro passo.
+
+						{/* PARÁGRAFO 3 */}
+						<p className="text-[#F4F0E1] font-mulish text-[13px] text-left leading-[135%] font-semibold">
+							Hoje, Ramon é casado, construiu uma nova história, tornou-se o primeiro brasileiro autorizado a aplicar a Teoria da Permissão e tem mais de 160 mil pessoas acompanhando seu trabalho. Já foi convidado para compartilhar essa mensagem em emissoras como SBT, Band e Record porque fala de algo que muita gente vive, mas quase ninguém sabe explicar. No Levante dos Improváveis, Ramon conduz uma experiência para quem está cansado de repetir estagnação e quer entender o que realmente precisa ser corrigido para avançar.
 						</p>
+
 						<button
 							onClick={handleScroll}
-							className="mt-[12px] mb-[12px] w-full h-[64px] md:h-[64px] rounded-[8px] font-mulish font-extrabold text-[14px] md:text-[16px] leading-[145%] uppercase text-black transition-all hover:brightness-110 border border-[#FCF3D4] [background:linear-gradient(90deg,_#DFD2A7_0%,_#FCF3D4_100%)] shadow-[0px_6px_18.9px_0px_#F7EDCC85]">
+							className="mt-[12px] mb-[12px] w-full h-[64px] md:h-[64px] rounded-[8px] font-mulish font-extrabold text-[14px] md:text-[16px] leading-[145%] uppercase text-black transition-all hover:brightness-110 border border-[#FCF3D4] [background:linear-gradient(90deg,_#DFD2A7_0%,_#FCF3D4_100%)] shadow-[0px_6px_18.9px_0px_#F7EDCC85]"
+						>
 							PARTICIPAR GRATUITAMENTE
 						</button>
 					</div>
 				</div>
 			</div>
-		</section >
+		</section>
 	);
 }
