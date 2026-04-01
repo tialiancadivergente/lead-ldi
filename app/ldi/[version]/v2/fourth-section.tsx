@@ -45,33 +45,47 @@ export default function FourthSection({
             Ramon Galimberti
           </p>
 
-          <div className="font-spectral font-normal not-italic text-[16px] leading-[24px] tracking-[0] align-middle text-white flex flex-col gap-6 mt-[300px] md:mt-0 md:text-[18px] md:leading-[24px] md:gap-7">
+          <div className="font-spectral font-normal not-italic text-[14px] leading-[24px] tracking-[0] align-middle text-white flex flex-col gap-0 mt-[300px] md:mt-0 md:text-[14px] md:leading-[24px] md:gap-7">
             <p>
-              Mentor da Aliança Divergente, comunidade com mais de 200 mil
-              aliados no Brasil e no mundo. Formado em Engenharia, Ramon
-              descobriu depois dos 30 que assumir controle financeiro e
-              multiplicar ganhos não é questão de capacidade, mas de corrigir as
-              relações que geram padrões nocivos.
+              Engenheiro, mestre e mentor de desenvolvimento humano. Durante
+              muito tempo, viveu a frustração de se esforçar, tentar, insistir —
+              e mesmo assim ver a vida parar no quase. O dinheiro não permanecia,
+              os planos não se firmavam, o relacionamento não deu certo e ele
+              chegou a usar o ticket do pai para fazer compra no mercado e virar
+              o mês. Era divorciado, estava travado em várias áreas da vida e
+              carregava a sensação de que fazia muito, mas avançava pouco.
             </p>
 
             <p>
-              Com mais de 500K seguidores no Instagram e 46.9K no YouTube,
-              Ramon desenvolveu um método sistemático para identificar e
-              corrigir os padrões bloqueadores de permissão para você ter
-              controle total sobre os acontecimentos da sua vida e ganhar mais
-              dinheiro.
+              Foi na busca por entender por que isso acontecia que Ramon
+              encontrou uma resposta que mudou sua história. A partir daí, uniu
+              sua base lógica em engenharia, seu olhar para o comportamento
+              humano e sua experiência prática para desenvolver uma forma própria
+              de identificar e corrigir os padrões invisíveis que travam
+              dinheiro, relacionamentos, decisões e liberdade.
             </p>
 
             <p>
-              A missão de Ramon é clara: apoiar pessoas a corrigirem sua base
-              interna para terem Permissão de multiplicar seus ganhos e
-              oportunidades de sucesso. Se você quer destravar sua vida, O
-              Levante dos Improváveis é o primeiro passo.
+              <span className="text-[#C0964B]">
+                por que pessoas capazes continuam presas no quase.
+              </span>{" "}
+              Hoje, Ramon é casado, construiu uma nova história, tornou-se o
+              primeiro brasileiro autorizado a aplicar a Teoria da Permissão e
+              tem mais de 160 mil pessoas acompanhando seu trabalho. Já foi
+              convidado para compartilhar essa mensagem em emissoras como SBT,
+              Band e Record porque fala de algo que muita gente vive, mas quase
+              ninguém sabe explicar.
+            </p>
+
+            <p>
+              No Levante dos Improváveis, Ramon conduz uma experiência para quem
+              está cansado de repetir estagnação e quer entender o que realmente
+              precisa ser corrigido para avançar.
             </p>
 
             <DialogCustom
               btLabel="PARTICIPAR GRATUITAMENTE"
-              btClassName="w-full max-w-[380px] h-[50px] bg-[#C0964B] text-white text-[14px] md:text-base font-bold mt-4 md:mt-8 transition-all duration-200 hover:bg-[#e9cb84] hover:text-black"
+              btClassName="w-full max-w-[380px] h-[50px] bg-[#C0964B] text-white text-[12px] md:text-base font-bold mt-4 md:mt-8 transition-all duration-200 hover:bg-[#e9cb84] hover:text-black"
               formName={formName}
               onSubmit={onSubmit}
               submitError={submitError}
