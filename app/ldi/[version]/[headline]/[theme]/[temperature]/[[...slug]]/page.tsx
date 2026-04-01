@@ -5,6 +5,7 @@ import SplashScreenOro from "@/app/components/SplashScreen/SplashScreenOro";
 import Formv1 from "@/app/ldi/[version]/v1";
 import Formv2 from "@/app/ldi/[version]/v2";
 import Formv3 from "@/app/ldi/[version]/v3";
+import Formv4 from "@/app/ldi/[version]/v4";  
 
 export default function Home() {
   const { version } = useParams();
@@ -21,6 +22,14 @@ export default function Home() {
     return (
       <SplashScreenOro>
         <Formv3 />
+      </SplashScreenOro>
+    );
+  }
+
+      if (version === "v4") {
+    return (
+      <SplashScreenOro>
+        <Formv4 />
       </SplashScreenOro>
     );
   }
