@@ -62,7 +62,7 @@ export default function HeroSection({ formName, onSubmit, submitError }: HeroSec
 
         <div className="flex flex-col items-center justify-start w-full max-w-[700px]">
           <p className="text-base font-bold mt-4 text-center">
-            <span className="block md:inline">06 A 08 DE ABRIL – ÀS 20H.</span>{" "}
+            <span className="block md:inline">11 A 13 DE MAIO – ÀS 20H.</span>{" "}
             <span className="block md:inline">ONLINE - AO VIVO - GRATUITO.</span>
           </p>
 

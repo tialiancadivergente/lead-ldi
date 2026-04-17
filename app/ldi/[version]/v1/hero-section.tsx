@@ -56,7 +56,7 @@ export default function HeroSection({
               className="shrink-0 md:w-[18px] md:h-[18px]"
             />
             <span className="leading-[120%]">
-              6, 7 e 8/4 às 20h
+              11,12 e 13/05 às 20h
             </span>
           </div>
           <div className="w-[1px] h-[16px] bg-[#02252C]" />
