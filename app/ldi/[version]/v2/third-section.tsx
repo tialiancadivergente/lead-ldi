@@ -40,29 +40,27 @@ export default function ThirdSection({
     >
       <div
         className="
-        w-full
-        max-w-[640px]
-        mx-auto
-
-        px-[42px]     
-        md:px-0
-      "
+          w-full
+          max-w-[640px]
+          mx-auto
+          px-[42px]
+          md:px-0
+        "
       >
         <p
           className="
-          text-[#F4F0E1]
-          font-spectral
-          font-extrabold
-          text-[32px]
-          leading-[100%]
-          text-left
+            text-[#F4F0E1]
+            font-spectral
+            font-extrabold
+            text-[32px]
+            leading-[100%]
+            text-left
+            mt-[30px]
 
-          mt-[30px]
-
-          md:text-[40px]
-          md:text-center
-          md:mt-0
-        "
+            md:text-[40px]
+            md:text-center
+            md:mt-0
+          "
         >
           Esse encontro <br />
           é para quem:
@@ -70,33 +68,34 @@ export default function ThirdSection({
 
         <div
           className="
-          flex
-          flex-col
-          gap-6     
-          mt-[48px]
+            flex
+            flex-col
+            gap-5        /* antes 4 */
+            mt-[36px]    /* antes 28 */
 
-          md:gap-4
-          md:mt-[72px]
-        "
+            md:gap-4
+            md:mt-[72px]
+          "
         >
           {listaEncontro.map((frase, idx) => (
-            <div key={idx} className="flex items-start gap-4">
+            <div key={idx} className="flex items-start gap-3 md:gap-4">
               <CheckCircle2
-                size={32}
-                className="text-[#C0964B] mt-[4px] flex-shrink-0"
+                size={26}
+                className="text-[#C0964B] mt-[2px] flex-shrink-0 md:w-8 md:h-8 md:mt-[4px]"
               />
 
               <p
                 className="
-                text-[#F4F0E1]
-                font-spectral
-                font-bold
-                text-[20px]
-                leading-[32px]
-                text-left
+                  text-[#F4F0E1]
+                  font-spectral
+                  font-bold
+                  text-[18px]
+                  leading-[26px]
+                  text-left
 
-                md:text-[24px]
-              "
+                  md:text-[24px]
+                  md:leading-[32px]
+                "
               >
                 {frase}
               </p>
