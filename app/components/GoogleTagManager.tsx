@@ -1,10 +1,10 @@
 "use client";
 
-import { useEffect } from "react";
+import { Suspense, useEffect } from "react";
 import TagManager from "react-gtm-module";
 import { useParams, usePathname, useSearchParams } from "next/navigation";
 
-const GoogleTagManager = () => {
+const GoogleTagManagerInner = () => {
   const { temperature } = useParams();
   const pathname = usePathname();
   const searchParams = useSearchParams();
@@ -50,6 +50,14 @@ const GoogleTagManager = () => {
   }, [pathname, temperature, searchParams]);
 
   return null;
+};
+
+const GoogleTagManager = () => {
+  return (
+    <Suspense fallback={null}>
+      <GoogleTagManagerInner />
+    </Suspense>
+  );
 };
 
 export default GoogleTagManager;
