@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { handleScroll } from "@/lib/utils";
+import FooterLdi from "@/app/components/footer-ldi/footer";
 
 export default function FiveSection() {
 	return (
@@ -59,15 +60,7 @@ export default function FiveSection() {
 					className="mt-[12px] mb-[12px] w-full max-w-[457px] h-[64px] md:h-[64px] rounded-[8px] font-mulish font-extrabold text-[14px] md:text-[16px] leading-[145%] uppercase text-black transition-all hover:brightness-110 border border-[#FCF3D4] [background:linear-gradient(90deg,_#DFD2A7_0%,_#FCF3D4_100%)] shadow-[0px_6px_18.9px_0px_#F7EDCC85]">
 					ACESSAR O LEVANTE DOS IMPROVÁVEIS
 				</button>
-				<div className="flex md:flex-row flex-col-reverse items-center justify-between gap-10 w-full md:mt-28 mt-12 md:gap-2">
-					<div className="text-[#0A3740] text-[14px] text-center md:text-left leading-[135%] font-mulish">Copyright © O Levante dos Improváveis. <br /> Todos os direitos reservados.</div>
-					<Image
-						src="/images/v5/LOGO OLDI.png"
-						alt="Risk"
-						width={250}
-						height={32}
-					/>
-				</div>
+        <FooterLdi className="md:mt-28 mt-12" logoVariant="dark" />
 			</div>
 		</section >
 	);

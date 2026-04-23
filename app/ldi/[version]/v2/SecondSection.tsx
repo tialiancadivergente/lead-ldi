@@ -1,7 +1,5 @@
 "use client";
 
-import { handleScroll } from "@/lib/utils";
-import Image from "next/image";
 import DialogCustom from "../../../components/dialog-custom/dialog-custom";
 import { LeadCaptureSubmitData } from "@/app/components/form/lead-capture-form";
 

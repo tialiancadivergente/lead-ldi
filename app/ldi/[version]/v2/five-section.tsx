@@ -5,6 +5,7 @@ import Image from "next/image";
 import { handleScroll } from "@/lib/utils";
 import DialogCustom from "../../../components/dialog-custom/dialog-custom";
 import { LeadCaptureSubmitData } from "@/app/components/form/lead-capture-form";
+import FooterLdi from "@/app/components/footer-ldi/footer";
 
 interface FiveSectionProps {
   formName: string;
@@ -32,7 +33,7 @@ export default function FiveSection({
       <div className="w-full max-w-[1060px] mx-auto">
         {/* MOBILE */}
         <div className="flex flex-col items-center justify-start px-[24px] pt-[90px] pb-[70px] md:hidden">
-          
+
           <Image
             src="/images/v2/Logo-LDI.png"
             alt="Logo O Levante dos Improváveis"
@@ -104,13 +105,6 @@ export default function FiveSection({
             <p className="font-spectral font-bold text-[22.47px] leading-[33.7px] text-center text-[#F4F0E1]">
               11 a 13 de Maio, às 20h
             </p>
-            <Image
-              src="/images/v2/Logo-Alianca.png"
-              alt="Logo Aliança Divergente"
-              width={340}
-              height={44}
-              className="w-full mx-auto mt-10"
-            />
           </div>
 
           <div className="flex flex-col items-start justify-start gap-4">
@@ -134,12 +128,9 @@ export default function FiveSection({
               phoneInputClassName="w-full !h-[56px] md:!h-[74px] px-[18px] md:px-[24px] rounded-r-[12px] border border-[#CFCFCF] border-l-0 bg-white placeholder:text-[#2B2B2B] text-[#111111] font-mulish font-normal text-[16px] md:text-[20px] leading-[140%] focus:outline-none"
               buttonClassName="mt-[16px] md:mt-[20px] mb-0 w-full h-[58px] md:h-[74px] rounded-[12px] bg-[#22C32E] font-mulish font-extrabold text-[15px] md:text-[20px] leading-[100%] uppercase text-white transition-all hover:brightness-105 border-0 shadow-none"
             />
-
-            <p className="mt-[65px] font-spectral text-[12px] leading-[120%] uppercase text-[#F4F0E1]">
-              <span className="font-bold">Copyright 2026</span> © Todos os direitos reservados.
-            </p>
           </div>
         </div>
+          <FooterLdi className="md:mt-16 mt-12" />
       </div>
     </section>
   );

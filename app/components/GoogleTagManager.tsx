@@ -2,17 +2,22 @@
 
 import { useEffect } from "react";
 import TagManager from "react-gtm-module";
-import { useParams, usePathname } from "next/navigation";
+import { useParams, usePathname, useSearchParams } from "next/navigation";
 
 const GoogleTagManager = () => {
   const { temperature } = useParams();
   const pathname = usePathname();
+  const searchParams = useSearchParams();
 
   useEffect(() => {
     const defaultGtmId = "GTM-WKPB8M8L";
     const oroOrgGtmId = "";
+    const routeTemperature = Array.isArray(temperature)
+      ? temperature[0]
+      : temperature || "";
+    const queryTemperature = searchParams?.get("temperature") || "";
     const normalizedTemperature = (
-      Array.isArray(temperature) ? temperature[0] : temperature || ""
+      routeTemperature || queryTemperature
     ).toLowerCase();
     const normalizedPathname = (pathname || "").toLowerCase();
     const shouldSkipTagManager =
@@ -42,7 +47,7 @@ const GoogleTagManager = () => {
     console.log("gtmId ===>", gtmId);
 
     TagManager.initialize({ gtmId });
-  }, [pathname, temperature]);
+  }, [pathname, temperature, searchParams]);
 
   return null;
 };
