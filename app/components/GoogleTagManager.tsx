@@ -11,7 +11,8 @@ const GoogleTagManagerInner = () => {
 
   useEffect(() => {
     const defaultGtmId = "GTM-WKPB8M8L";
-    const oroOrgGtmId = "";
+    const oroOrgGtmId = "GTM-MF9LVRFF";
+    const oraOrgGtmId = "";
     const routeTemperature = Array.isArray(temperature)
       ? temperature[0]
       : temperature || "";
@@ -21,8 +22,6 @@ const GoogleTagManagerInner = () => {
     ).toLowerCase();
     const normalizedPathname = (pathname || "").toLowerCase();
     const shouldSkipTagManager =
-      normalizedTemperature === "o" ||
-      normalizedTemperature === "org" ||
       normalizedPathname.startsWith("/redo");
 
     if (shouldSkipTagManager) {
@@ -30,17 +29,20 @@ const GoogleTagManagerInner = () => {
     }
 
     const getGtmIdByPathname = (currentPathname: string) => {
-      const isOroRoute = currentPathname.includes("/ora");
+      const isOraRoute = currentPathname.includes("/ora");
       const isEligibleTemperature =
         normalizedTemperature === "o" || normalizedTemperature === "org";
 
-      if (isOroRoute && isEligibleTemperature) {
+      if (isOraRoute) {
+        return oraOrgGtmId;
+      }
+
+      if (isEligibleTemperature) {
         return oroOrgGtmId;
       }
 
       return defaultGtmId;
     };
-
     const gtmIdByPath = getGtmIdByPathname(normalizedPathname);
     const gtmId = gtmIdByPath !== defaultGtmId ? gtmIdByPath : defaultGtmId;
 
