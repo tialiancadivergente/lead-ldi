@@ -286,8 +286,8 @@ export default function ContainerQuest({
             </p>
 
             <Button
-              className="w-full mb-10 max-w-sm py-4 md:py-6 text-sm md:text-base hover:opacity-90 transition-opacity duration-300 rounded-3xl bg-[#936C27] bg-[radial-gradient(circle,_#E2CA9E_25%,_#936C27_100%)]"
-              onClick={() => window.open(whatsappUrl, "_blank")}
+              className="w-full mb-10 max-w-sm py-4 md:py-6 text-sm md:text-base transition-none rounded-3xl bg-[#25D366] hover:bg-[#25D366] hover:opacity-100"
+               onClick={() => window.open(whatsappUrl, "_blank")}
             >
               Entrar no Grupo
             </Button>
