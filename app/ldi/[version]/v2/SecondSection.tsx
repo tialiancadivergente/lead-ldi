@@ -14,7 +14,7 @@ const itemsToResolve = [
   },
   {
     number: 3,
-    text: "Como reorganizar suas relações sem depender de anos de terapia ou análises intermináveis.",
+    text: "Como reorganizar suas relações sem depender de anos de tentativa e erro ou de respostas que nunca chegam depois dos 30.",
   },
   {
     number: 4,
@@ -35,6 +35,7 @@ export default function SecondSection({
 }: SecondSectionProps) {
   return (
     <section
+      aria-labelledby="second-section-title-v2"
       className={`
         w-full
         min-h-[1400px]
@@ -57,7 +58,12 @@ export default function SecondSection({
     >
       <div className="w-full max-w-[1060px] mx-auto pb-12 md:pb-0">
         <div className="text-[#F4F0E1] font-spectral w-full px-[42px] pt-[44px] md:max-w-[667px] md:px-0 md:pt-0">
-          <p className="w-[350px] max-w-full font-spectral font-extrabold text-[32px] leading-[120%] tracking-[0%] text-left md:w-auto md:text-[40px] md:leading-[56px]">
+          
+          {/* TÍTULO PRINCIPAL */}
+          <h2
+            id="second-section-title-v2"
+            className="w-[350px] max-w-full font-spectral font-extrabold text-[32px] leading-[120%] text-left md:w-auto md:text-[40px] md:leading-[56px]"
+          >
             <span className="md:hidden">
               O que elas fizeram
               <br />
@@ -66,19 +72,20 @@ export default function SecondSection({
             <span className="hidden md:inline">
               O que elas fizeram de diferente?
             </span>
-          </p>
+          </h2>
 
-          <p className="w-full font-spectral text-[16px] leading-[28px] tracking-[0%] text-left align-middle mt-6 md:my-8 md:text-[18px] md:leading-[24px]">
-            <span className="font-bold">Identificaram e corrigiram</span>{" "}
-            <span className="font-normal">
-              um tipo de relação que a maioria das pessoas nem sabe que existe –
-              mas controla silenciosamente a forma como você lida com dinheiro,
-              oportunidades e crescimento.
-            </span>
+          {/* TEXTO */}
+          <p className="w-full font-spectral text-[16px] leading-[28px] text-left mt-6 md:my-8 md:text-[18px] md:leading-[24px]">
+            <strong>Identificaram e corrigiram</strong>{" "}
+            um tipo de relação que a maioria das pessoas nem sabe que existe –
+            mas controla silenciosamente a forma como você lida com dinheiro,
+            oportunidades e crescimento.
           </p>
 
           <div className="mt-[700px] md:mt-0">
-            <p className="w-[355px] max-w-full font-spectral font-normal not-italic text-[32px] leading-[100%] tracking-[0%] text-left md:w-auto md:text-[40px] md:leading-[56px]">
+            
+            {/* SUBTÍTULO */}
+            <h3 className="w-[355px] max-w-full font-spectral text-[32px] leading-[100%] text-left md:w-auto md:text-[40px] md:leading-[56px]">
               <span className="md:hidden">
                 O que você vai resolver
                 <br />
@@ -95,8 +102,9 @@ export default function SecondSection({
                   O Levante dos Improváveis:
                 </span>
               </span>
-            </p>
+            </h3>
 
+            {/* LISTA */}
             <div className="mt-8 flex flex-col items-center gap-6 md:items-start md:gap-4">
               {itemsToResolve.map((item) => (
                 <div
@@ -130,7 +138,7 @@ export default function SecondSection({
                     {item.number}
                   </p>
 
-                  <p className="font-spectral font-normal text-[14px] leading-[20px] md:text-[18px] md:leading-[24px] text-[#104448]">
+                  <p className="font-spectral text-[14px] leading-[20px] md:text-[18px] md:leading-[24px] text-[#104448]">
                     {item.text}
                   </p>
                 </div>
@@ -139,6 +147,7 @@ export default function SecondSection({
           </div>
         </div>
 
+        {/* CTA */}
         <div className="flex justify-center items-center mt-5 md:mt-24">
           <DialogCustom
             btLabel="PARTICIPAR GRATUITAMENTE"

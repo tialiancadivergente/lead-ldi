@@ -2,7 +2,6 @@
 
 import React from "react";
 import Image from "next/image";
-import { handleScroll } from "@/lib/utils";
 import DialogCustom from "../../../components/dialog-custom/dialog-custom";
 import { LeadCaptureSubmitData } from "@/app/components/form/lead-capture-form";
 import FooterLdi from "@/app/components/footer-ldi/footer";
@@ -20,6 +19,7 @@ export default function FiveSection({
 }: FiveSectionProps) {
   return (
     <section
+      aria-labelledby="cta-section-title-v2"
       className="
         w-full
         min-h-[778px]
@@ -31,24 +31,29 @@ export default function FiveSection({
       "
     >
       <div className="w-full max-w-[1060px] mx-auto">
+        
         {/* MOBILE */}
         <div className="flex flex-col items-center justify-start px-[24px] pt-[90px] pb-[70px] md:hidden">
 
           <Image
             src="/images/v2/Logo-LDI.png"
-            alt="Logo O Levante dos Improváveis"
+            alt="Evento O Levante dos Improváveis - desenvolvimento pessoal e liberdade financeira"
             width={320}
             height={90}
             className="w-[260px] h-auto mx-auto"
+            priority
           />
 
           <div className="mt-[18px] bg-[#104448] px-[18px] py-[8px] uppercase text-[#CA9A63] font-spectral font-bold text-[12px] text-center">
             É online, ao vivo e gratuito.
           </div>
 
-          <p className="mt-[22px] font-spectral font-bold text-[22px] leading-[110%] text-center text-[#F4F0E1]">
+          <h2
+            id="cta-section-title-v2"
+            className="mt-[22px] font-spectral font-bold text-[22px] leading-[110%] text-center text-[#F4F0E1]"
+          >
             11 a 13 de Maio, às 20h
-          </p>
+          </h2>
 
           <div className="mt-[40px] w-full max-w-[320px]">
             <p className="font-spectral font-normal text-[18px] leading-[150%] text-center text-[#F4F0E1]">
@@ -62,7 +67,6 @@ export default function FiveSection({
             </p>
           </div>
 
-          {/* BOTÃO MOBILE */}
           <DialogCustom
             btLabel="ACESSAR O LEVANTE DOS IMPROVÁVEIS"
             btClassName="mt-[36px] w-full max-w-[260px] h-[56px] bg-[#C0964B] text-white text-[14px] uppercase font-bold transition-all duration-200 hover:bg-[#e9cb84] hover:text-black px-[20px]"
@@ -78,14 +82,14 @@ export default function FiveSection({
 
           <Image
             src="/images/v2/Logo-Alianca.png"
-            alt="Logo Aliança Divergente"
+            alt="Aliança Divergente - desenvolvimento humano e transformação"
             width={300}
             height={40}
             className="w-[260px] h-auto mx-auto mt-[50px]"
           />
 
           <p className="mt-[20px] font-spectral font-normal text-[10px] leading-[120%] text-center uppercase text-[#F4F0E1]">
-            <span className="font-bold">Copyright 2026</span> © todos os direitos reservados.
+            <strong>Copyright 2026</strong> © todos os direitos reservados.
           </p>
         </div>
 
@@ -94,28 +98,30 @@ export default function FiveSection({
           <div className="flex flex-col items-center justify-center gap-7 w-full max-w-[340px]">
             <Image
               src="/images/v2/Logo-LDI.png"
-              alt="Logo O Levante dos Improváveis"
+              alt="Evento O Levante dos Improváveis"
               width={339}
               height={96}
               className="w-full mx-auto"
             />
+
             <div className="bg-[#104448] py-2 px-5 uppercase text-[#CA9A63] font-spectral font-bold text-[14px]">
               É online, ao vivo e gratuito.
             </div>
-            <p className="font-spectral font-bold text-[22.47px] leading-[33.7px] text-center text-[#F4F0E1]">
+
+            <h2 className="font-spectral font-bold text-[22.47px] leading-[33.7px] text-center text-[#F4F0E1]">
               11 a 13 de Maio, às 20h
-            </p>
+            </h2>
           </div>
 
           <div className="flex flex-col items-start justify-start gap-4">
             <p className="font-spectral text-[16px] leading-[24px] text-[#F4F0E1]">
               Não é sobre as pessoas mais talentosas. <br /> Não é sobre as mais preparadas.
             </p>
+
             <p className="font-spectral font-bold text-[16px] leading-[24px] text-[#F4F0E1]">
               É um processo prático para destravar sua vida financeira depois dos 30 e corrigir relacionamentos que impedem sua permissão de ir mais longe.
             </p>
 
-            {/* BOTÃO DESKTOP */}
             <DialogCustom
               btLabel="ACESSAR O LEVANTE DOS IMPROVÁVEIS"
               btClassName="w-full max-w-[380px] h-[50px] bg-[#C0964B] text-white text-base uppercase font-bold mt-8 transition-all duration-200 hover:bg-[#e9cb84] hover:text-black"
@@ -130,7 +136,8 @@ export default function FiveSection({
             />
           </div>
         </div>
-          <FooterLdi className="md:mt-16 mt-12" />
+
+        <FooterLdi className="md:mt-16 mt-12" />
       </div>
     </section>
   );

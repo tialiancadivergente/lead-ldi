@@ -6,7 +6,7 @@ import DialogCustom from "../../../components/dialog-custom/dialog-custom";
 import { LeadCaptureSubmitData } from "@/app/components/form/lead-capture-form";
 
 const listaEncontro = [
-  "Já investiu em cursos, mentorias ou terapias e ainda sente a vida travada",
+  "Já investiu em cursos, mentorias e ainda sente a vida travada",
   "Sabe que tem capacidade de sobra, mas o resultado financeiro não acompanha",
   "Quer entender o que realmente está te segurando e corrigir isso",
   "Decidiu parar de tentar as mesmas soluções e se levantar contra tudo que te bloqueia",
@@ -25,6 +25,7 @@ export default function ThirdSection({
 }: ThirdSectionProps) {
   return (
     <section
+      aria-labelledby="third-section-title-v2"
       className={`
         w-full
         min-h-[775px]
@@ -47,7 +48,8 @@ export default function ThirdSection({
           md:px-0
         "
       >
-        <p
+        <h2
+          id="third-section-title-v2"
           className="
             text-[#F4F0E1]
             font-spectral
@@ -62,16 +64,15 @@ export default function ThirdSection({
             md:mt-0
           "
         >
-          Esse encontro <br />
-          é para quem:
-        </p>
+          Esse encontro <br />é para quem:
+        </h2>
 
         <div
           className="
             flex
             flex-col
-            gap-5        /* antes 4 */
-            mt-[36px]    /* antes 28 */
+            gap-5
+            mt-[36px]
 
             md:gap-4
             md:mt-[72px]
@@ -81,6 +82,7 @@ export default function ThirdSection({
             <div key={idx} className="flex items-start gap-3 md:gap-4">
               <CheckCircle2
                 size={26}
+                aria-hidden="true"
                 className="text-[#C0964B] mt-[2px] flex-shrink-0 md:w-8 md:h-8 md:mt-[4px]"
               />
 

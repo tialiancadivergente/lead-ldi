@@ -14,7 +14,7 @@ const testimonials = [
   {
     name: "Renata Fagundes",
     image: "/images/v1/renata.png",
-    text: "De endividada, com depressão profunda e ganhando R$ 5 mil por mês para uma mulher que retomou a vontade de viver, passou a ganhar R$ 30mil por mês e hoje vive uma vida de sonhos.",
+    text: "De estagnada e travada nos R$ 5 mil por mês para uma mulher que recuperou a clareza sobre suas escolhas, passou a faturar R$ 30 mil por mês e hoje vive a vida que antes parecia distante.",
   },
   {
     name: "Jonathas Da Silva",
@@ -39,10 +39,16 @@ interface HeroSectionProps {
   submitError?: string | null;
 }
 
-export default function HeroSection({ formName, onSubmit, submitError }: HeroSectionProps) {
+export default function HeroSection({
+  formName,
+  onSubmit,
+  submitError,
+}: HeroSectionProps) {
   return (
     <section
       id="hero"
+      role="main"
+      aria-label="Evento O Levante dos Improváveis versão 2"
       className="relative min-h-[2104px] h-auto md:min-h-[1517px] md:h-full flex flex-col justify-start overflow-hidden text-white font-spectral bg-[#104447] bg-[url('/images/v2/bg_mobile.webp')] md:bg-[url('/images/v2/bg.webp')] bg-cover bg-center px-[42px] pb-6 md:px-4"
     >
       <div className="relative left-1/2 right-1/2 ml-[-50vw] mr-[-50vw] w-screen h-[64px] md:h-[48px] bg-[#C0964B] flex items-center justify-center">
@@ -54,30 +60,33 @@ export default function HeroSection({ formName, onSubmit, submitError }: HeroSec
       <div className="w-full max-w-[1060px] mx-auto flex flex-col items-center justify-start">
         <Image
           src="/images/v2/Logo-LDI.png"
-          alt="Logo O Levante dos Improváveis"
+          alt="Evento O Levante dos Improváveis - desenvolvimento pessoal e liberdade financeira"
           width={339}
           height={96}
           className="mt-16"
+          priority
         />
 
         <div className="flex flex-col items-center justify-start w-full max-w-[700px]">
           <p className="text-base font-bold mt-4 text-center">
             <span className="block md:inline">11 A 13 DE MAIO – ÀS 20H.</span>{" "}
-            <span className="block md:inline">ONLINE - AO VIVO - GRATUITO.</span>
+            <span className="block md:inline">
+              ONLINE - AO VIVO - GRATUITO.
+            </span>
           </p>
 
-          <div className="mt-8 text-left md:text-center font-spectral font-bold text-[24px] md:text-4xl leading-[30px] md:leading-[42px] tracking-[-0.01em]">
-            <p>
-              Evento para{" "}
-              <span className="text-[#E8C88E]">destravar seu dinheiro,</span>{" "}
-              decisões e liberdade corrigindo relações que geram padrões de
-              bloqueio na sua vida.
-            </p>
+          <h1 className="mt-8 text-left md:text-center font-spectral font-bold text-[24px] md:text-4xl leading-[30px] md:leading-[42px] tracking-[-0.01em]">
+            Evento para{" "}
+            <span className="text-[#E8C88E]">
+              destravar seu dinheiro,
+            </span>{" "}
+            decisões e liberdade corrigindo relações que geram padrões de
+            bloqueio na sua vida.
+          </h1>
 
-            <p className="mt-3 md:mt-2">
-              Junte-se a nos e seja mais um improvável que deu certo!
-            </p>
-          </div>
+          <p className="mt-3 md:mt-2 text-left md:text-center font-spectral font-bold text-[24px] md:text-4xl leading-[30px] md:leading-[42px]">
+            Junte-se a nós e seja mais um improvável que deu certo!
+          </p>
 
           <DialogCustom
             formName={formName}
@@ -90,14 +99,16 @@ export default function HeroSection({ formName, onSubmit, submitError }: HeroSec
             buttonClassName="mt-[16px] md:mt-[20px] mb-0 w-full h-[58px] md:h-[74px] rounded-[12px] bg-[#22C32E] font-mulish font-extrabold text-[15px] md:text-[20px] leading-[100%] uppercase text-white transition-all hover:brightness-105 border-0 shadow-none"
           />
 
-          <p className="mt-16 text-left md:text-left font-spectral text-[20px] md:text-[30px] leading-[140%] md:leading-[36px] tracking-[0%] text-[#F4F0E1]">
+          <p className="mt-16 text-left md:text-left font-spectral text-[20px] md:text-[30px] leading-[140%] md:leading-[36px] text-[#F4F0E1]">
             Existem pessoas com{" "}
-            <span className="font-bold">menos condição que você</span> que
-            conseguiram destravar a vida financeira e construir liberdade real.
-            Elas não eram as mais preparadas.
+            <span className="font-bold">
+              menos condição que você
+            </span>{" "}
+            que conseguiram destravar a vida financeira e construir liberdade
+            real. Elas não eram as mais preparadas.
           </p>
 
-          <p className="mt-12 text-left w-full font-spectral font-bold text-[16px] md:text-[18px] leading-[24px] md:leading-[40px] tracking-[0%] text-[#F4F0E1]">
+          <p className="mt-12 text-left w-full font-spectral font-bold text-[16px] md:text-[18px] leading-[24px] md:leading-[40px] text-[#F4F0E1]">
             Na verdade, se transformaram em improváveis que deram certo…
           </p>
         </div>
@@ -111,7 +122,7 @@ export default function HeroSection({ formName, onSubmit, submitError }: HeroSec
               <div className="flex items-center gap-4">
                 <Image
                   src={testimonial.image}
-                  alt={testimonial.name}
+                  alt={`Depoimento de ${testimonial.name}`}
                   width={47}
                   height={47}
                 />

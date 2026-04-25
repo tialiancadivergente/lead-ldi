@@ -17,6 +17,7 @@ export default function FourthSection({
 }: FourthSectionProps) {
   return (
     <section
+      aria-labelledby="mentor-section-title-v2"
       className="
         w-full
         min-h-[1800px]
@@ -35,32 +36,43 @@ export default function FourthSection({
     >
       <div className="w-full max-w-[1060px] mx-auto flex justify-end px-[42px] pt-[60px] md:px-0 md:pt-0">
         <div className="font-spectral max-w-[520px] w-full flex flex-col">
-          <p className="font-spectral font-extrabold text-[32px] leading-[100%] tracking-[0] text-[#F4F0E1] md:text-[40px] md:leading-[56px]">
+          <h2
+            id="mentor-section-title-v2"
+            className="font-spectral font-extrabold text-[32px] leading-[100%] tracking-[0] text-[#F4F0E1] md:text-[40px] md:leading-[56px]"
+          >
             Quem vai ser o seu
             <br />
             mentor nessa jornada?
-          </p>
+          </h2>
 
-          <p className="font-[Teramo] font-bold text-[#C0964B] text-[20px] leading-[145%] tracking-[0] mt-3 mb-[360px] md:text-[24px] md:my-6">
+          <h3 className="font-[Teramo] font-bold text-[#C0964B] text-[20px] leading-[145%] tracking-[0] mt-3 mb-[360px] md:text-[24px] md:my-6">
             Ramon Galimberti
-          </p>
+          </h3>
 
           <div className="font-spectral font-normal not-italic text-[18px] leading-[24px] tracking-[0] align-middle text-white flex flex-col gap-0 mt-[240px] md:mt-0 md:text-[18px] md:leading-[24px] md:gap-7">
-            
             <p>
-              Engenheiro, mestre e mentor de desenvolvimento humano. Durante muito tempo, Ramon viveu a frustração de se esforçar muito e ver a vida parar no quase. O dinheiro não permanecia, os planos não se firmavam, o relacionamento não deu certo e ele usava o ticket do pai para virar o mês.
+              Engenheiro, mestre e mentor de desenvolvimento humano. Durante
+              muito tempo, Ramon viveu a frustração de se esforçar muito e ver a
+              vida parar no quase. O dinheiro não permanecia, os planos não se
+              firmavam, o relacionamento não deu certo e ele usava o ticket do
+              pai para virar o mês.
             </p>
 
             <p>
-              Travado na vida, buscou resposta do porquê isso acontecia. E assim, ele uniu seus conhecimentos em engenharia, comportamento humano e sua experiência prática para identificar e corrigir os padrões invisíveis que travam dinheiro, relacionamentos, decisões e liberdade.
+              Hoje, Ramon é casado, construiu uma nova história e tornou-se o
+              primeiro brasileiro autorizado a aplicar a Teoria da Permissão.
+              Com mais de 160 mil seguidores e passagens por emissoras como SBT,
+              Band e Record, vem falando de algo que muita gente vive, mas quase
+              ninguém sabe explicar:{" "}
+              <span className="text-[#C0964B]">
+                por que pessoas capazes continuam presas no quase?
+              </span>
             </p>
 
             <p>
-              Hoje, Ramon é casado, construiu uma nova história e tornou-se o primeiro brasileiro autorizado a aplicar a Teoria da Permissão. Com mais de 160 mil seguidores e passagens por emissoras como SBT, Band e Record, vem falando de algo que muita gente vive, mas quase ninguém sabe explicar: <span className="text-[#C0964B]">por que pessoas capazes continuam presas no quase?</span>
-            </p>
-
-            <p>
-              No Levante dos Improváveis, Ramon conduz uma experiência para quem está cansado de repetir estagnação e quer entender o que realmente precisa ser corrigido para avançar.
+              No Levante dos Improváveis, Ramon conduz uma experiência para quem
+              está cansado de repetir estagnação e quer entender o que realmente
+              precisa ser corrigido para avançar.
             </p>
 
             <DialogCustom
