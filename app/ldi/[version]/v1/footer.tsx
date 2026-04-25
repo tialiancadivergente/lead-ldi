@@ -3,6 +3,8 @@ import Image from "next/image";
 export default function Footer() {
   return (
     <footer
+      role="contentinfo"
+      aria-label="Rodapé do site Aliança Divergente"
       className="
         w-full
         flex
@@ -34,7 +36,7 @@ export default function Footer() {
         {/* LOGO */}
         <Image
           src="/images/ora/v1/logo_o_proximo_nivel.png"
-          alt="Logo"
+          alt="Aliança Divergente - desenvolvimento pessoal e transformação de vida"
           width={160}
           height={74}
           className="object-contain"
@@ -52,7 +54,7 @@ export default function Footer() {
             text-white
           "
         >
-          2026 Aliança Divergente © Todos os Direitos Reservados.
+          © 2026 Aliança Divergente. Todos os direitos reservados.
         </p>
 
       </div>

@@ -18,7 +18,7 @@ const testimonials = [
   {
     name: "Renata Fagundes",
     image: "/images/v1/renata.png",
-    text: "De endividada, com depressão profunda e ganhando R$ 5 mil por mês para uma mulher que retomou a vontade de viver, passou a ganhar R$ 30mil por mês e hoje vive uma vida de sonhos."
+    text: " De estagnada e travada nos R$ 5 mil por mês para uma mulher que recuperou a clareza sobre suas escolhas, passou a faturar R$ 30 mil por mês e hoje vive a vida que antes parecia distante."
   },
   {
     name: "Jonathas Da Silva",
