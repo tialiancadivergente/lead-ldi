@@ -24,7 +24,7 @@ export default function SecondSection() {
 			`}
 		>
 			<div className="w-full max-w-[349px] md:max-w-[990px] mx-auto text-center py-[33px] md:py-10 font-mulish text-[16px] md:text-[18px] leading-[125%] text-[#F4F0E1] font-bold">
-				
+
 				{/* DESKTOP (intacto) */}
 				<p className="md:block hidden mb-4 md:mb-8">
 					Você continua acreditando que o problema é falta de esforço? <br />
@@ -32,7 +32,7 @@ export default function SecondSection() {
 				</p>
 
 				<div className="md:block hidden md:text-[40px] text-[20px] font-spectral font-bold text-[#C0964B] leading-[120%]">
-					O QUE REALMENTE TRAVA SUA VIDA DEPOIS DOS 30 SÃO AS RELAÇÕES QUE VOCÊ AINDA NÃO SABE COMO CORRIGIR.
+					O QUE REALMENTE TRAVA SEUS RESULTADOS DEPOIS DOS 30 SÃO AS DINÂMICAS DE CONVÍVIO QUE VOCÊ AINDA NÃO ENXERGA.
 				</div>
 
 				{/* MOBILE */}
@@ -55,8 +55,7 @@ export default function SecondSection() {
 						"
 					>
 						<p className="font-spectral font-bold text-[16px] leading-[118%] uppercase text-[#C0964B] text-center">
-							O QUE REALMENTE TRAVA SUA VIDA DEPOIS DOS 30 SÃO AS RELAÇÕES QUE VOCÊ AINDA NÃO SABE COMO CORRIGIR.
-						</p>
+							O QUE REALMENTE TRAVA SEUS RESULTADOS DEPOIS DOS 30 SÃO AS DINÂMICAS DE CONVÍVIO QUE VOCÊ AINDA NÃO ENXERGA.						</p>
 					</div>
 				</div>
 

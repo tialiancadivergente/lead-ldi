@@ -33,7 +33,7 @@ export const Headline: IHeadline[] = [
 
     title: (
       <>
-        Um processo prático para destravar sua vida financeira depois dos 30. <span className="text-[#C0964B] md:text-[#0A3740]">Corrigindo relacionamentos que travam suas decisões sem você perceber.</span>
+        UM PROCESSO PRÁTICO PARA DESTRAVAR SUA VIDA FINANCEIRA DEPOIS DOS 30. <span className="text-[#C0964B] md:text-[#0A3740]">CORRIGINDO OS PADRÕES DE CONVÍVIO QUE FREIAM SEUS RESULTADOS SEM VOCÊ PERCEBER.</span>
       </>
     ),
 

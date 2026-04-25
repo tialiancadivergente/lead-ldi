@@ -46,9 +46,6 @@ export default function FourthSection() {
 							Engenheiro, mestre e mentor de desenvolvimento humano. Durante muito tempo, Ramon viveu a frustração de se esforçar muito e ver a vida parar no quase. O dinheiro não permanecia, os planos não se firmavam, o relacionamento não deu certo e ele usava o ticket do pai para virar o mês.
 						</p>
 
-						<p className="text-[#F4F0E1] font-mulish text-[16px] text-left leading-[135%] font-semibold">
-							Travado na vida, buscou resposta do porquê isso acontecia. E assim, ele uniu seus conhecimentos em engenharia, comportamento humano e sua experiência prática para identificar e corrigir os padrões invisíveis que travam dinheiro, relacionamentos, decisões e liberdade.
-						</p>
 
 						<p className="text-[#F4F0E1] font-mulish text-[16px] text-left leading-[135%] font-semibold">
 							Hoje, Ramon é casado, construiu uma nova história e tornou-se o primeiro brasileiro autorizado a aplicar a Teoria da Permissão. Com mais de 160 mil seguidores e passagens por emissoras como SBT, Band e Record, vem falando de algo que muita gente vive, mas quase ninguém sabe explicar: <span className="text-[#C0964B]">por que pessoas capazes continuam presas no quase?</span>
