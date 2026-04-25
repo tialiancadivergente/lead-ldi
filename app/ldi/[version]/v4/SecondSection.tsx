@@ -31,8 +31,7 @@ export default function SecondSection() {
 				</p>
 
 				<div className="hidden md:block md:text-[40px] text-[20px] font-spectral font-bold text-[#C0964B] leading-[120%]">
-					O QUE REALMENTE TRAVA SUA VIDA DEPOIS DOS 30 SÃO AS RELAÇÕES QUE VOCÊ AINDA NÃO SABE COMO CORRIGIR.
-				</div>
+					O QUE REALMENTE TRAVA SEUS RESULTADOS DEPOIS DOS 30 SÃO AS DINÂMICAS DE CONVÍVIO QUE VOCÊ AINDA NÃO ENXERGA.				</div>
 
 				{/* MOBILE */}
 				<div className="md:hidden">
@@ -53,8 +52,7 @@ export default function SecondSection() {
 						"
 					>
 						<p className="font-spectral font-bold text-[16px] leading-[118%] uppercase text-[#C0964B] text-center">
-							O QUE REALMENTE TRAVA SUA VIDA DEPOIS DOS 30 SÃO AS RELAÇÕES QUE VOCÊ AINDA NÃO SABE COMO CORRIGIR.
-						</p>
+							O QUE REALMENTE TRAVA SEUS RESULTADOS DEPOIS DOS 30 SÃO AS DINÂMICAS DE CONVÍVIO QUE VOCÊ AINDA NÃO ENXERGA.						</p>
 					</div>
 				</div>
 

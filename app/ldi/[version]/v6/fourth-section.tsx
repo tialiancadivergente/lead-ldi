@@ -45,10 +45,6 @@ export default function FourthSection() {
 						</p>
 
 						<p className="text-[#0A3740] font-mulish text-[16px] text-left leading-[135%] font-semibold">
-							Travado na vida, buscou resposta do porquê isso acontecia. E assim, ele uniu seus conhecimentos em engenharia, comportamento humano e sua experiência prática para identificar e corrigir os padrões invisíveis que travam dinheiro, relacionamentos, decisões e liberdade.
-						</p>
-
-						<p className="text-[#0A3740] font-mulish text-[16px] text-left leading-[135%] font-semibold">
 							Hoje, Ramon é casado, construiu uma nova história e tornou-se o primeiro brasileiro autorizado a aplicar a Teoria da Permissão. Com mais de 160 mil seguidores e passagens por emissoras como SBT, Band e Record, vem falando de algo que muita gente vive, mas quase ninguém sabe explicar: por que pessoas capazes continuam presas no quase?
 						</p>
 

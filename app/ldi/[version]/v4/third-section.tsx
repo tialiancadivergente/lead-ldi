@@ -68,8 +68,7 @@ export default function ThirdSection() {
               </span>
             </div>
             <div className="text-[#F4F0E1] font-mulish text-[16px] md:text-[18px] leading-[135%] font-semibold w-full md:px-8 px-4 mt-2 md:mt-4">
-              Como reorganizar suas relações sem depender de anos de terapia ou análises intermináveis.
-            </div>
+              Como reorganizar suas relações sem depender de anos de tentativa e erro ou de respostas que nunca chegam depois dos 30."            </div>
           </div>
 
           <div className="bg-[url('/images/v1/frame-mobile.png')] md:bg-[url('/images/v1/frame.png')] bg-no-repeat bg-center bg-cover w-full max-w-[194px] md:max-w-[270px] h-[276px] md:h-[290px]">
@@ -87,12 +86,12 @@ export default function ThirdSection() {
           </div>
         </div>
         <Image
-					src="/images/v1/risk.png"
-					alt="Risk"
-					width={609}
-					height={2}
-					className="w-full max-w-[609px] mx-auto my-16 md:block hidden"
-				/>
+          src="/images/v1/risk.png"
+          alt="Risk"
+          width={609}
+          height={2}
+          className="w-full max-w-[609px] mx-auto my-16 md:block hidden"
+        />
         <p className="text-[#C0964B] font-spectral text-[20px] md:text-[35px] text-center leading-[125%] font-bold max-w-[667px] w-full mx-auto mt-10 md:mt-0">
           Esse encontro é para quem:
         </p>
@@ -105,7 +104,7 @@ export default function ThirdSection() {
               height={31}
             />
             <p className="text-[#F4F0E1] font-mulish text-[16px] md:text-[18px] leading-[135%] font-semibold w-full md:mt-4 mt-0">
-              Já investiu em cursos, mentorias ou terapias e ainda sente a vida travada
+              Já investiu em cursos, mentorias e ainda sente a vida travada
             </p>
           </div>
           <div className="flex md:flex-col flex-row items-start justify-start md:gap-1 gap-4 w-full max-w-[250px]">
