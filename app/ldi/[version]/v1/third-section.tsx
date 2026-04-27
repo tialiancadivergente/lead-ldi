@@ -105,7 +105,7 @@ export default function ThirdSection() {
 
         <div className="flex flex-col md:flex-row items-center md:items-start justify-between md:gap-4 gap-8 md:mt-16 mt-10">
           {[
-            "Já investiu em cursos, mentorias e ainda sente a vida travada",
+            "Já investiu em muita capacitação e ainda sente a vida travada",
             "Sabe que tem capacidade de sobra, mas o resultado financeiro não acompanha",
             "Quer entender o que realmente está te segurando e corrigir isso",
             "Decidiu parar de tentar as mesmas soluções e se levantar contra tudo que te bloqueia",

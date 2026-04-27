@@ -6,7 +6,7 @@ import DialogCustom from "../../../components/dialog-custom/dialog-custom";
 import { LeadCaptureSubmitData } from "@/app/components/form/lead-capture-form";
 
 const listaEncontro = [
-  "Já investiu em cursos, mentorias e ainda sente a vida travada",
+  "Já investiu em muita capacitação e ainda sente a vida travada",
   "Sabe que tem capacidade de sobra, mas o resultado financeiro não acompanha",
   "Quer entender o que realmente está te segurando e corrigir isso",
   "Decidiu parar de tentar as mesmas soluções e se levantar contra tudo que te bloqueia",

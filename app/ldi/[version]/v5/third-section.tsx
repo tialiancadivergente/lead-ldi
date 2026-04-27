@@ -105,7 +105,7 @@ export default function ThirdSection() {
               height={31}
             />
             <p className="text-[#F4F0E1] font-mulish text-[16px] md:text-[18px] leading-[135%] font-semibold w-full md:mt-4 mt-0">
-              Já investiu em cursos, mentorias e ainda sente a vida travada
+              Já investiu em muita capacitação e ainda sente a vida travada
             </p>
           </div>
           <div className="flex md:flex-col flex-row items-start justify-start md:gap-1 gap-4 w-full max-w-[250px]">
