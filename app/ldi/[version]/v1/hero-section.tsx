@@ -50,31 +50,21 @@ export default function HeroSection({
           />
         </div>
 
-        <div className="hidden md:flex flex-wrap items-center justify-start md:justify-start gap-x-[10px] gap-y-[8px] md:gap-[20px] my-8 text-[#F4F0E1] font-mulish text-[12px] md:text-[16px] w-full max-w-[349px] md:w-auto md:max-w-none">
+        <div className="hidden md:flex flex-wrap items-center justify-start gap-x-[10px] gap-y-[8px] md:gap-[20px] my-8 text-[#F4F0E1] font-mulish text-[12px] md:text-[16px] w-full max-w-[349px] md:w-auto md:max-w-none">
           <div className="flex items-center gap-1.5 min-w-0">
-            <CalendarDays
-              size={16}
-              color="#02252C"
-              className="shrink-0 md:w-[18px] md:h-[18px]"
-            />
+            <CalendarDays size={16} color="#02252C" className="shrink-0 md:w-[18px] md:h-[18px]" />
             <span className="leading-[120%]">11, 12 e 13/05 às 20h</span>
           </div>
 
           <div className="w-[1px] h-[16px] bg-[#02252C]" />
 
           <div className="flex items-center gap-1.5 min-w-0">
-            <Smartphone
-              size={16}
-              color="#02252C"
-              className="shrink-0 md:w-[18px] md:h-[18px]"
-            />
+            <Smartphone size={16} color="#02252C" className="shrink-0 md:w-[18px] md:h-[18px]" />
             <span className="leading-[120%]">Ao vivo e sem replay</span>
           </div>
         </div>
 
-        <h1
-          className="font-spectral my-3 font-bold uppercase text-[#F4F0E1] text-[20px] leading-[120%] tracking-[-0.02em] w-full max-w-[349px] text-center md:w-[560px] md:max-w-none md:text-2xl md:text-left"
-        >
+        <h1 className="font-spectral my-3 font-bold uppercase text-[#F4F0E1] text-[20px] leading-[120%] tracking-[-0.02em] w-full max-w-[349px] text-center md:w-[560px] md:max-w-none md:text-2xl md:text-left">
           {titleRedLine}
         </h1>
 
@@ -83,18 +73,22 @@ export default function HeroSection({
             text-[#F4F0E1]
             font-mulish
             text-[14px]
-            leading-[125%]
+            leading-[140%]
             w-full
-            max-w-[349px]
-            md:w-[400px]
-            md:max-w-none
+            md:max-w-[560px]
             md:text-[16px]
             text-center md:text-left
           "
         >
-          Evento online de 3 dias para você que já tentou de tudo e continua no
-          mesmo lugar — mas agora está pronto para se levantar contra os padrões
-          que travam seu dinheiro, decisões e liberdade.
+          <span className="block whitespace-nowrap">
+            Evento online de 3 dias para você que já tentou de tudo e continua
+          </span>
+          <span className="block whitespace-nowrap">
+            no mesmo lugar — mas agora está pronto para se levantar contra os
+          </span>
+          <span className="block whitespace-nowrap">
+            padrões que travam seu dinheiro, decisões e liberdade.
+          </span>
         </p>
 
         <div className="w-full max-w-[349px] md:max-w-[527px] mt-10 md:mt-5">
@@ -110,24 +104,16 @@ export default function HeroSection({
           />
         </div>
 
-        <div className="md:hidden flex flex-wrap items-center justify-start md:justify-start gap-x-[10px] gap-y-[8px] md:gap-[20px] my-8 text-[#F4F0E1] font-mulish text-[12px] md:text-[16px] w-full max-w-[349px] md:w-auto md:max-w-none">
+        <div className="md:hidden flex flex-wrap items-center justify-start gap-x-[10px] gap-y-[8px] md:gap-[20px] my-8 text-[#F4F0E1] font-mulish text-[12px] md:text-[16px] w-full max-w-[349px] md:w-auto md:max-w-none">
           <div className="flex items-center gap-1.5 min-w-0">
-            <CalendarDays
-              size={16}
-              color="#C0964B"
-              className="shrink-0 md:w-[18px] md:h-[18px]"
-            />
+            <CalendarDays size={16} color="#C0964B" className="shrink-0 md:w-[18px] md:h-[18px]" />
             <span className="leading-[120%]">11, 12 e 13/05 às 20h</span>
           </div>
 
           <div className="w-[1px] h-[16px] bg-[#F4F0E1]" />
 
           <div className="flex items-center gap-1.5 min-w-0">
-            <Smartphone
-              size={16}
-              color="#C0964B"
-              className="shrink-0 md:w-[18px] md:h-[18px]"
-            />
+            <Smartphone size={16} color="#C0964B" className="shrink-0 md:w-[18px] md:h-[18px]" />
             <span className="leading-[120%]">Ao vivo e sem replay</span>
           </div>
         </div>

@@ -75,19 +75,23 @@ export default function HeroSection({
             text-[#F4F0E1]
             font-mulish
             text-[14px]
-            leading-[125%]
+            leading-[140%]
             w-full
-            max-w-[349px]
-            md:w-[400px]
-            md:max-w-none
+            md:max-w-[560px]
             md:text-[16px]
             text-center
             md:text-left
           "
         >
-          Este é um evento de 3 dias para você que já tentou de tudo e continua
-          no mesmo lugar – mas agora está pronto para se levantar contra os
-          padrões que travam seu dinheiro, decisões e liberdade.
+          <span className="block whitespace-nowrap">
+            Este é um evento de 3 dias para você que já tentou de tudo e continua
+          </span>
+          <span className="block whitespace-nowrap">
+            no mesmo lugar – mas agora está pronto para se levantar contra os
+          </span>
+          <span className="block whitespace-nowrap">
+            padrões que travam seu dinheiro, decisões e liberdade.
+          </span>
         </p>
 
         <div className="w-full max-w-[349px] md:max-w-[527px] mt-10 md:mt-5">
