@@ -30,6 +30,7 @@ export default function HeroSection({
       className="relative h-[980px] md:min-h-[924px] md:h-[924px] flex flex-col justify-start overflow-hidden bg-[#071117] bg-[url('/images/v1/bg-mobile3.png')] md:bg-[url('/images/v1/bg.webp')] bg-cover bg-center px-4 pt-5 pb-6 md:p-0"
     >
       <div className="w-full max-w-[349px] md:max-w-[527px] flex flex-col items-center md:items-start text-left md:text-left mt-0 md:mt-[60px] md:ml-[100px] mx-auto md:mx-0">
+
         <div className="w-full justify-start hidden md:flex">
           <Image
             src="/images/logo-o-levante-dos-improvaveis.png"
@@ -50,7 +51,7 @@ export default function HeroSection({
           />
         </div>
 
-        <div className="hidden md:flex flex-wrap items-center justify-start gap-x-[10px] gap-y-[8px] md:gap-[20px] my-8 text-[#F4F0E1] font-mulish text-[12px] md:text-[16px] w-full max-w-[349px] md:w-auto md:max-w-none">
+        <div className="hidden md:flex flex-wrap items-center justify-start gap-x-[10px] gap-y-[8px] md:gap-[20px] my-2 md:my-8 text-[#F4F0E1] font-mulish text-[12px] md:text-[16px] w-full max-w-[349px] md:w-auto md:max-w-none">
           <div className="flex items-center gap-1.5 min-w-0">
             <CalendarDays size={16} color="#02252C" className="shrink-0 md:w-[18px] md:h-[18px]" />
             <span className="leading-[120%]">11, 12 e 13/05 às 20h</span>
@@ -64,7 +65,7 @@ export default function HeroSection({
           </div>
         </div>
 
-        <h1 className="font-spectral my-3 font-bold uppercase text-[#F4F0E1] text-[20px] leading-[120%] tracking-[-0.02em] w-full max-w-[349px] text-center md:w-[560px] md:max-w-none md:text-2xl md:text-left">
+        <h1 className="font-spectral my-3 font-bold uppercase text-[#F4F0E1] text-[20px] leading-[120%] tracking-[-0.02em] w-full max-w-[349px] text-center md:w-[560px] md:max-w-none md:text-[28px] md:text-left">
           {titleRedLine}
         </h1>
 
@@ -72,23 +73,15 @@ export default function HeroSection({
           className="
             text-[#F4F0E1]
             font-mulish
-            text-[14px]
-            leading-[140%]
+            text-[15px]
+            leading-[150%]
             w-full
             md:max-w-[560px]
             md:text-[16px]
             text-center md:text-left
           "
         >
-          <span className="block whitespace-nowrap">
-            Evento online de 3 dias para você que já tentou de tudo e continua
-          </span>
-          <span className="block whitespace-nowrap">
-            no mesmo lugar — mas agora está pronto para se levantar contra os
-          </span>
-          <span className="block whitespace-nowrap">
-            padrões que travam seu dinheiro, decisões e liberdade.
-          </span>
+          Evento online de 3 dias para você que já tentou de tudo e continua no mesmo lugar — mas agora está pronto para se levantar contra os padrões que travam seu dinheiro, decisões e liberdade.
         </p>
 
         <div className="w-full max-w-[349px] md:max-w-[527px] mt-10 md:mt-5">
@@ -104,19 +97,20 @@ export default function HeroSection({
           />
         </div>
 
-        <div className="md:hidden flex flex-wrap items-center justify-start gap-x-[10px] gap-y-[8px] md:gap-[20px] my-8 text-[#F4F0E1] font-mulish text-[12px] md:text-[16px] w-full max-w-[349px] md:w-auto md:max-w-none">
+        <div className="md:hidden flex flex-wrap items-center justify-start gap-x-[10px] gap-y-[8px] mt-2 mb-6 text-[#F4F0E1] font-mulish text-[12px] w-full max-w-[349px]">
           <div className="flex items-center gap-1.5 min-w-0">
-            <CalendarDays size={16} color="#C0964B" className="shrink-0 md:w-[18px] md:h-[18px]" />
+            <CalendarDays size={16} color="#C0964B" className="shrink-0" />
             <span className="leading-[120%]">11, 12 e 13/05 às 20h</span>
           </div>
 
           <div className="w-[1px] h-[16px] bg-[#F4F0E1]" />
 
           <div className="flex items-center gap-1.5 min-w-0">
-            <Smartphone size={16} color="#C0964B" className="shrink-0 md:w-[18px] md:h-[18px]" />
+            <Smartphone size={16} color="#C0964B" className="shrink-0" />
             <span className="leading-[120%]">Ao vivo e sem replay</span>
           </div>
         </div>
+
       </div>
     </section>
   );

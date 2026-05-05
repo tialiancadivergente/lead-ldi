@@ -11,7 +11,7 @@ export default function ThirdSection() {
         min-h-[1321px]
         md:min-h-[1154px]
         bg-[url('/images/v1/bg-three-mobile.webp')]
-        md:bg-[url('/images/v1/bg-three.webp')]
+        md:bg-[url('/images/v4_ldi/bg-three.webp')]
         bg-no-repeat
         bg-center
         bg-cover

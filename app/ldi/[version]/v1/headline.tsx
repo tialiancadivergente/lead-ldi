@@ -183,4 +183,23 @@ export const Headline: IHeadline[] = [
       </>
     ),
   },
+  
+  {
+  id: "h10",
+  isPicture: false,
+  isLogo: true,
+
+  title: (
+    <>
+      Conheça o método prático que <span className="text-[#C0964B] md:text-[#0A3740]">"improváveis"</span> estão usando para superar a estagnação na carreira e organizar sua vida financeira depois dos 30 —
+      <span className="text-[#C0964B] md:text-[#0A3740]"> corrigindo os padrões que te impedem de avançar.</span>
+    </>
+  ),
+
+  text: (
+    <>
+      Segunda-feira, 23/03, às 20h &nbsp; • &nbsp; Ao vivo e sem replay
+    </>
+  ),
+},
 ];

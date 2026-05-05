@@ -13,27 +13,27 @@ const testimonials = [
   {
     name: "Aurea Maria",
     image: "/images/v1/aurea.png",
-    text: "De advogada com mais de 200mil reias de dívida, ganhando 3 mil por mês para quitar suas dívidas em apenas 2 meses e uma vida financeira plena"
+    text: "De uma rotina sufocada por dívidas e estagnação na advocacia para uma profissional que conseguiu organizar suas finanças, quitar suas pendências e construir estabilidade na carreira."
   },
   {
     name: "Renata Fagundes",
     image: "/images/v1/renata.png",
-    text: " De estagnada e travada nos R$ 5 mil por mês para uma mulher que recuperou a clareza sobre suas escolhas, passou a faturar R$ 30 mil por mês e hoje vive a vida que antes parecia distante."
+    text: "De estagnada na carreira para uma mulher que recuperou a clareza sobre suas escolhas, escalou os resultados do seu negócio e hoje vive a realidade que antes parecia distante."
   },
   {
     name: "Jonathas Da Silva",
     image: "/images/v1/jonathas.png",
-    text: "De carregar uma dívida de R$70 mil reais do irmão, relações conturbadas com os pais e o faturamento travado em R$ 3 mil para um empresário que fatura R$ 38mil reais por mês que prioriza mulher e filho."
+    text: "De lidar com dívidas de terceiros e relações familiares conturbadas para um empresário que conseguiu destravar o crescimento da sua empresa, priorizando tempo de qualidade com a esposa e o filho."
   },
   {
     name: "Érika Pirett",
     image: "/images/v1/erika.png",
-    text: "De faxineira em situação de necessidade para empresária que fatura mais de R$ 15 mil reais por mês, realizando o desejo de viajar pela Europa."
+    text: "De feirante lidando com necessidades diárias para uma empresária próspera e dona do próprio negócio, colhendo os frutos do seu trabalho e realizando o desejo de viajar pelo mundo."
   },
   {
     name: "Josiane Carvalho",
     image: "/images/v1/josiane.png",
-    text: "De 4 pós-graduações e um escritório próprio de advocácia, vivendo sem dinheiro. Para um faturamento de R$ 30mil reais, assumindo causas de mais de R$ 400 mil reais, triplicando sua renda anual."
+    text: "De advogada altamente qualificada, mas sem retorno financeiro proporcional ao seu esforço, para uma profissional valorizada, assumindo grandes casos e multiplicando os resultados do seu escritório."
   },
 ]
 

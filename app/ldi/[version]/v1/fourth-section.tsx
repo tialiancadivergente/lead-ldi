@@ -30,7 +30,7 @@ export default function FourthSection() {
       "
     >
       <div className="w-full max-w-[1156px] mx-auto flex items-start justify-end">
-        <div className="flex flex-col gap-4 max-w-[517px] w-full md:mt-[80px]">
+        <div className="flex flex-col gap-4 max-w-[517px] w-full md:mt-[20px]">
           <h2
             id="mentor-section-title"
             className="text-[#D3CAC0] font-spectral text-[25px] md:text-[35px] text-center md:text-left leading-[125%] font-bold relative -top-[10px] md:top-0"
