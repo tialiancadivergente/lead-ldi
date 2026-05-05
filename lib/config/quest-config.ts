@@ -3,6 +3,7 @@ export const DEFAULT_QUEST_FORM_VERSION_ID =
 
 const QUEST_WHATSAPP_URL_BY_TEMPERATURE = {
   f: "https://sendflow.click/i/ldi-maio26",
+  t: "https://sendflow.click/i/ldi-maio26",
   org: "https://sendflow.click/i/ldi-maio26-org",
   o: "https://sendflow.click/i/ldi-maio26-org",
   m: "https://sendflow.click/i/ldi-maio26",
