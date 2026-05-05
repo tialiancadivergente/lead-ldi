@@ -8,6 +8,7 @@ import Formv3 from "@/app/ldi/[version]/v3";
 import Formv4 from "@/app/ldi/[version]/v4";  
 import Formv5 from "@/app/ldi/[version]/v5";
 import Formv6 from "@/app/ldi/[version]/v6";
+import Formv7 from "@/app/ldi/[version]/v7";
 
 export default function Home() {
   const { version } = useParams();
@@ -48,6 +49,14 @@ export default function Home() {
     return (
       <SplashScreenOro>
         <Formv6 />
+      </SplashScreenOro>
+    );
+  }
+
+        if (version === "v7") {
+    return (
+      <SplashScreenOro>
+        <Formv7 />
       </SplashScreenOro>
     );
   }

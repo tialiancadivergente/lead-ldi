@@ -24,76 +24,106 @@ export default function FooterLdi({
   const logoSrc = LOGO_BY_VARIANT[logoVariant];
 
   return (
-    <footer
-      className={cn(
-        "flex md:flex-row flex-col items-center justify-between gap-6 w-full md:gap-2",
-        className
-      )}
-    >
-      <div
-        className={cn(
-          "text-[14px] text-center md:text-left leading-[135%] font-mulish hidden md:block",
-          textColorClass
-        )}
+    <div className={cn("w-full", className)}>
+      <footer
+        className="
+          flex md:flex-row flex-col
+          items-center justify-between
+          gap-6 w-full md:gap-2
+        "
       >
-        Copyright © O Levante dos Improváveis. <br /> Todos os direitos reservados.
-      </div>
-      <Image
-        src={logoSrc}
-        alt="Risk"
-        width={250}
-        height={32}
-      />
-      <div
-        className={cn(
-          "text-[14px] text-center md:text-left leading-[135%] font-mulish block md:hidden",
-          textColorClass
-        )}
-      >
-        Copyright © O Levante dos Improváveis. <br /> Todos os direitos reservados.
-      </div>
-      <div className="flex flex-col items-center space-x-2">
-        <div className="flex items-center space-x-2">
-          <Link
-            href="https://www.aliancadivergente.com.br/politicas-de-privacidade"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={cn(
-              "text-[14px] text-center md:text-left leading-[135%] font-mulish transition-colors duration-200 hover:text-[#C0964B]",
-              textColorClass
-            )}
-          >
-            Política de privacidade
-          </Link>
-          <span
-            className={cn(
-              "text-[14px] text-center md:text-left leading-[135%] font-mulish",
-              textColorClass
-            )}
-          >
-            |
-          </span>
-          <Link
-            href="https://pt.scribd.com/document/812002283/alianca-divergente-termos-de-uso"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={cn(
-              "text-[14px] text-center md:text-left leading-[135%] font-mulish transition-colors duration-200 hover:text-[#C0964B]",
-              textColorClass
-            )}
-          >
-            Termos de uso
-          </Link>
-        </div>
-        <p
+        <div
           className={cn(
-            "text-[12px] text-center md:text-left leading-[135%] font-mulish",
+            "text-[14px] text-center md:text-left leading-[135%] font-mulish hidden md:block",
             textColorClass
           )}
         >
-          CNPJ nº 48.424.807/0001-88
+          Copyright © O Levante dos Improváveis. <br />
+          Todos os direitos reservados.
+        </div>
+
+        <Image src={logoSrc} alt="Risk" width={250} height={32} />
+
+        <div
+          className={cn(
+            "text-[14px] text-center md:text-left leading-[135%] font-mulish block md:hidden",
+            textColorClass
+          )}
+        >
+          Copyright © O Levante dos Improváveis. <br />
+          Todos os direitos reservados.
+        </div>
+
+        <div className="flex flex-col items-center md:items-start space-x-2">
+          <div className="flex items-center space-x-2">
+            <Link
+              href="https://www.aliancadivergente.com.br/politicas-de-privacidade"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={cn(
+                "text-[14px] text-center md:text-left leading-[135%] font-mulish transition-colors duration-200 hover:text-[#C0964B]",
+                textColorClass
+              )}
+            >
+              Política de privacidade
+            </Link>
+
+            <span
+              className={cn(
+                "text-[14px] text-center md:text-left leading-[135%] font-mulish",
+                textColorClass
+              )}
+            >
+              |
+            </span>
+
+            <Link
+              href="https://pt.scribd.com/document/812002283/alianca-divergente-termos-de-uso"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={cn(
+                "text-[14px] text-center md:text-left leading-[135%] font-mulish transition-colors duration-200 hover:text-[#C0964B]",
+                textColorClass
+              )}
+            >
+              Termos de uso
+            </Link>
+          </div>
+
+          <p
+            className={cn(
+              "text-[12px] text-center md:text-left leading-[135%] font-mulish",
+              textColorClass
+            )}
+          >
+            CNPJ nº 48.424.807/0001-88
+          </p>
+        </div>
+      </footer>
+
+      <div className="w-full mt-6 md:mt-8 px-4 md:px-0">
+        <p
+          className={cn(
+            "font-mulish font-bold text-[14px] text-center md:text-left leading-[135%] mb-2",
+            textColorClass
+          )}
+        >
+          AVISO LEGAL:
+        </p>
+
+        <p
+          className={cn(
+            "font-mulish text-[14px] text-center md:text-left leading-[135%]",
+            textColorClass
+          )}
+        >
+          Os resultados podem variar de pessoa para pessoa. Este método tem
+          caráter educacional e de desenvolvimento pessoal, não garantindo
+          ganhos financeiros imediatos ou específicos. O sucesso depende da
+          aplicação prática de cada participante. Este site não é afiliado,
+          endossado ou patrocinado pelo Google ou Meta.
         </p>
       </div>
-    </footer>
+    </div>
   );
 }
