@@ -16,7 +16,8 @@ export const Headline: IHeadline[] = [
 
     title: (
       <>
-        CONHEÇA O PLANO QUE "IMPROVÁVEIS" ESTÃO USANDO PARA DESTRAVAR A VIDA FINANCEIRA DEPOIS DOS 30 – <span className="text-[#C0964B] md:text-[#0A3740]">CORRIGINDO OS PADRÕES QUE IMPEDEM DE AVANÇAR.</span>
+      Conheça o método prático que <span className="text-[#C0964B] md:text-[#0A3740]">"improváveis"</span> estão usando para superar a estagnação na carreira e organizar sua vida financeira depois dos 30 —
+      <span className="text-[#C0964B] md:text-[#0A3740]"> corrigindo os padrões que te impedem de avançar.</span>
       </>
     ),
 
@@ -191,9 +192,7 @@ export const Headline: IHeadline[] = [
 
   title: (
     <>
-      Conheça o método prático que <span className="text-[#C0964B] md:text-[#0A3740]">"improváveis"</span> estão usando para superar a estagnação na carreira e organizar sua vida financeira depois dos 30 —
-      <span className="text-[#C0964B] md:text-[#0A3740]"> corrigindo os padrões que te impedem de avançar.</span>
-    </>
+        CONHEÇA O PLANO QUE "IMPROVÁVEIS" ESTÃO USANDO PARA DESTRAVAR A VIDA FINANCEIRA DEPOIS DOS 30 – <span className="text-[#C0964B] md:text-[#0A3740]">CORRIGINDO OS PADRÕES QUE IMPEDEM DE AVANÇAR.</span>    </>
   ),
 
   text: (
