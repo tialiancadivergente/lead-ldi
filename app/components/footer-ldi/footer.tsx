@@ -96,7 +96,7 @@ export default function FooterLdi({
               textColorClass
             )}
           >
-            CNPJ nº 48.424.807/0001-88
+            AEON LTDA CNPJ nº 48.424.807/0001-88
           </p>
         </div>
       </footer>
