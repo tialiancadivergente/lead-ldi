@@ -57,7 +57,7 @@ export default function FooterLdi({
         <div className="flex flex-col items-center md:items-start space-x-2">
           <div className="flex items-center space-x-2">
             <Link
-              href="https://www.aliancadivergente.com.br/politicas-de-privacidade"
+              href="https://www.olevantedosimprovaveis.com/politica-de-privacidade"
               target="_blank"
               rel="noopener noreferrer"
               className={cn(
