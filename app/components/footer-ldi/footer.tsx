@@ -78,7 +78,7 @@ export default function FooterLdi({
             </span>
 
             <Link
-              href="https://pt.scribd.com/document/812002283/alianca-divergente-termos-de-uso"
+              href="https://www.olevantedosimprovaveis.com/termos-de-uso"
               target="_blank"
               rel="noopener noreferrer"
               className={cn(
