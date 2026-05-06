@@ -26,7 +26,7 @@ export default function PoliticaDePrivacidade() {
           </p>
 
           <p>
-            Este site (aliancadivergente.com.br), todo o seu conteúdo e seus sub endereços (o "WEBSITE") são de propriedade de <strong>AEON LTDA</strong>, inscrita no CNPJ nº 48.424.807/0001-88, com sede em AV PAULISTA, 1471 EDIF BARAO DE CRISTINA, CJ 1110, BELA VISTA, SÃO PAULO - SP, 01311-927, Brasil (o "Controlador") e segue a Política de Privacidade a seguir descrita:
+            Este site (aliancadivergente.com.br), todo o seu conteúdo e seus sub endereços (www.olevantedosimprovaveis.com.br) são de propriedade de <strong>AEON LTDA</strong>, inscrita no CNPJ nº 48.424.807/0001-88, com sede em AV PAULISTA, 1471 EDIF BARAO DE CRISTINA, CJ 1110, BELA VISTA, SÃO PAULO - SP, 01311-927, Brasil (o "Controlador") e segue a Política de Privacidade a seguir descrita:
           </p>
 
           <p>
