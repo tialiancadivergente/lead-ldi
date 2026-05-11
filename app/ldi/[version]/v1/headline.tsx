@@ -145,26 +145,26 @@ export const Headline: IHeadline[] = [
     ),
   },
 
-  {
-    id: "h8",
-    isPicture: false,
-    isLogo: true,
+ {
+  id: "h8",
+  isPicture: false,
+  isLogo: true,
 
-    title: (
-      <>
-        Descubra como pessoas travadas se levantaram contra relações nocivas, quebraram padrões antigos e alcançaram o sucesso mesmo depois dos 30.
-        <p className="mt-4">
-          <span className="text-[#C0964B] md:text-[#0A3740]">Agora chegou a sua vez de fazer o mesmo…</span>
-        </p>
-      </>
-    ),
+  title: (
+    <>
+      Descubra como pessoas travadas se levantaram contra relações nocivas, quebraram padrões antigos e alcançaram o sucesso mesmo depois dos 30.{" "}
+      <span className="text-[#C0964B] md:text-[#0A3740]">
+        Agora chegou a sua vez de fazer o mesmo…
+      </span>
+    </>
+  ),
 
-    text: (
-      <>
-        Segunda-feira, 23/03, às 20h &nbsp; • &nbsp; Ao vivo e sem replay
-      </>
-    ),
-  },
+  text: (
+    <>
+      Segunda-feira, 23/03, às 20h &nbsp; • &nbsp; Ao vivo e sem replay
+    </>
+  ),
+},
 
   {
     id: "h9",
