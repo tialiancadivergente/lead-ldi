@@ -27,7 +27,7 @@ export default function HeroSection({
       id="hero"
       role="main"
       aria-label="Evento O Levante dos Improváveis"
-      className="relative h-[1040px] md:min-h-[924px] md:h-[924px] flex flex-col justify-start overflow-hidden bg-[#071117] bg-[url('/images/v1/bg-mobile3.webp')] md:bg-[url('/images/v1/bg.webp')] bg-cover bg-center px-4 pt-5 pb-6 md:p-0"
+      className="relative h-[1147px] md:min-h-[905px] md:h-[905px] flex flex-col justify-start overflow-hidden bg-[#071117] bg-[url('/images/v1/bg-mobile3_novo.webp')] md:bg-[url('/images/v1/bg.webp_novo.webp')] bg-cover bg-center px-4 pt-5 pb-6 md:p-0"
     >
       <div className="w-full max-w-[349px] md:max-w-[560px] lg:max-w-[620px] xl:max-w-[660px] flex flex-col items-center md:items-start text-left md:text-left mt-0 md:mt-[60px] md:ml-[100px] mx-auto md:mx-0">
 
@@ -83,7 +83,7 @@ export default function HeroSection({
             text-center md:text-left
           "
         >
-          Evento online de 3 dias para você que já tentou de tudo e continua no mesmo lugar — mas agora está pronto para se levantar contra os padrões que travam seu dinheiro, decisões e liberdade.
+          Evento online de 3 dias para quem reconhece padrões que repetem e quer entender o que está por trás das escolhas que travam decisões, relacionamentos e projetos de vida.
         </p>
 
         <div className="w-full max-w-[349px] md:max-w-[527px] mt-10 md:mt-5">

@@ -16,8 +16,11 @@ export const Headline: IHeadline[] = [
 
     title: (
       <>
-      Conheça o método prático que <span className="text-[#C0964B] md:text-[#0A3740]">"improváveis"</span> estão usando para superar a estagnação na carreira e organizar sua vida financeira depois dos 30 —
-      <span className="text-[#C0964B] md:text-[#0A3740]"> corrigindo os padrões que te impedem de avançar.</span>
+        Conheça o método que <span className="text-[#C0964B] md:text-[#0A3740]">"improváveis"</span> estão usando para identificar e corrigir os{" "}
+        <span className="text-[#C0964B] md:text-[#0A3740]">
+          padrões de comportamento que travam decisões, relacionamentos e escolhas
+        </span>{" "}
+        depois dos 30.
       </>
     ),
 
@@ -145,26 +148,26 @@ export const Headline: IHeadline[] = [
     ),
   },
 
- {
-  id: "h8",
-  isPicture: false,
-  isLogo: true,
+  {
+    id: "h8",
+    isPicture: false,
+    isLogo: true,
 
-  title: (
-    <>
-      Descubra como pessoas travadas se levantaram contra relações nocivas, quebraram padrões antigos e alcançaram o sucesso mesmo depois dos 30.{" "}
-      <span className="text-[#C0964B] md:text-[#0A3740]">
-        Agora chegou a sua vez de fazer o mesmo…
-      </span>
-    </>
-  ),
+    title: (
+      <>
+        Descubra como pessoas travadas se levantaram contra relações nocivas, quebraram padrões antigos e alcançaram o sucesso mesmo depois dos 30.{" "}
+        <span className="text-[#C0964B] md:text-[#0A3740]">
+          Agora chegou a sua vez de fazer o mesmo…
+        </span>
+      </>
+    ),
 
-  text: (
-    <>
-      Segunda-feira, 23/03, às 20h &nbsp; • &nbsp; Ao vivo e sem replay
-    </>
-  ),
-},
+    text: (
+      <>
+        Segunda-feira, 23/03, às 20h &nbsp; • &nbsp; Ao vivo e sem replay
+      </>
+    ),
+  },
 
   {
     id: "h9",
@@ -184,21 +187,22 @@ export const Headline: IHeadline[] = [
       </>
     ),
   },
-  
+
   {
-  id: "h10",
-  isPicture: false,
-  isLogo: true,
+    id: "h10",
+    isPicture: false,
+    isLogo: true,
 
-  title: (
-    <>
-        CONHEÇA O PLANO QUE "IMPROVÁVEIS" ESTÃO USANDO PARA DESTRAVAR A VIDA FINANCEIRA DEPOIS DOS 30 – <span className="text-[#C0964B] md:text-[#0A3740]">CORRIGINDO OS PADRÕES QUE IMPEDEM DE AVANÇAR.</span>    </>
-  ),
+    title: (
+      <>
+        CONHEÇA O PLANO QUE "IMPROVÁVEIS" ESTÃO USANDO PARA DESTRAVAR A VIDA FINANCEIRA DEPOIS DOS 30 – <span className="text-[#C0964B] md:text-[#0A3740]">CORRIGINDO OS PADRÕES QUE IMPEDEM DE AVANÇAR.</span>
+      </>
+    ),
 
-  text: (
-    <>
-      Segunda-feira, 23/03, às 20h &nbsp; • &nbsp; Ao vivo e sem replay
-    </>
-  ),
-},
+    text: (
+      <>
+        Segunda-feira, 23/03, às 20h &nbsp; • &nbsp; Ao vivo e sem replay
+      </>
+    ),
+  },
 ];

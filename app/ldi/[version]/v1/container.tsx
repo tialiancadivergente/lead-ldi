@@ -38,9 +38,11 @@ export default function ContainerTeste({
 					onSubmit={onSubmit}
 					submitError={submitError}
 				/>
-				<SecondSection />
-				<CarouselSection />
-				<ThirdSection />
+
+				{/* <SecondSection /> */}
+				{/* <CarouselSection /> */}
+				{/* <ThirdSection /> */}
+
 				<FourthSection />
 				<FiveSection />
 			</>

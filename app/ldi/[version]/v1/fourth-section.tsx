@@ -9,11 +9,11 @@ export default function FourthSection() {
       aria-labelledby="mentor-section-title"
       className="
         w-full
-        min-h-[1400px]
-        md:min-h-[862px]
+        min-h-[1108px]
+        md:min-h-[916px]
         bg-[#071117]
-        bg-[url('/images/v1/bg-ramon-mobile.webp')]
-        md:bg-[url('/images/v1/bg-ramon.webp')]
+        bg-[url('/images/v1/bg-ramon-mobile_novo.webp')]
+        md:bg-[url('/images/v1/bg-ramon_novo.webp')]
         bg-cover
         bg-center
         bg-no-repeat
@@ -33,39 +33,26 @@ export default function FourthSection() {
         <div className="flex flex-col gap-4 max-w-[517px] w-full md:mt-[20px]">
           <h2
             id="mentor-section-title"
-            className="text-[#D3CAC0] font-spectral text-[25px] md:text-[35px] text-center md:text-left leading-[125%] font-bold relative -top-[10px] md:top-0"
+            className="text-[#D3CAC0] font-spectral text-[25px] md:text-[35px] text-center md:text-left leading-[125%] font-bold relative -top-[5px] md:top-0"
           >
             QUEM VAI SER O SEU MENTOR NESSA JORNADA?
           </h2>
 
-          <div className="mt-[450px] md:mt-0 w-full max-w-[350px] mx-auto flex flex-col gap-4 md:max-w-[517px]">
+          <div className="mt-[400px] md:mt-0 w-full max-w-[350px] mx-auto flex flex-col gap-4 md:max-w-[517px]">
             <h3 className="text-[#C0964B] font-spectral text-[30px] text-left leading-[125%] font-bold md:mt-0">
               Ramon Galimberti
             </h3>
 
             <p className="text-[#F4F0E1] font-mulish text-[16px] text-left leading-[135%] font-semibold">
-              Engenheiro, mestre e mentor de desenvolvimento humano. Durante
-              muito tempo, Ramon viveu a frustração de se esforçar muito e ver a
-              vida parar no quase. O dinheiro não permanecia, os planos não se
-              firmavam, o relacionamento não deu certo e ele usava o ticket do
-              pai para virar o mês.
-            </p>
-
-            <p className="text-[#F4F0E1] font-mulish text-[16px] text-left leading-[135%] font-semibold">
-              Hoje, Ramon é casado, construiu uma nova história e tornou-se o
-              primeiro brasileiro autorizado a aplicar a Teoria da Permissão.
-              Com mais de 160 mil seguidores e passagens por emissoras como
-              SBT, Band e Record, vem falando de algo que muita gente vive, mas
-              quase ninguém sabe explicar:{" "}
+              Engenheiro, mestre e mentor de desenvolvimento humano. Ramon passou anos estudando{" "}
               <span className="text-[#C0964B]">
-                por que pessoas capazes continuam presas no quase?
-              </span>
+                por que pessoas com capacidade e esforço continuam presas em padrões
+              </span>{" "}
+              que se repetem nas escolhas, nos relacionamentos, nas decisões que nunca saem do lugar.
             </p>
 
             <p className="text-[#F4F0E1] font-mulish text-[16px] text-left leading-[135%] font-semibold">
-              No Levante dos Improváveis, Ramon conduz uma experiência para quem
-              está cansado de repetir estagnação e quer entender o que realmente
-              precisa ser corrigido para avançar.
+              No Levante dos Improváveis, Ramon conduz uma experiência educacional para quem quer identificar esses padrões e entender como eles operam nas diferentes áreas da vida.
             </p>
 
             <button
