@@ -10,7 +10,7 @@ import {
 } from "@/app/modules/lead-score/lead-score-input-type";
 import type { QuizQuestion } from "@/app/modules/lead-score/lead-score.types";
 import { useEffect } from "react";
-import { Calendar, Smartphone } from "lucide-react";
+import { Smartphone } from "lucide-react";
 
 interface ContainerQuestProps {
   isFetchingQuestions: boolean;
@@ -94,15 +94,12 @@ export default function ContainerQuest({
                 />
               </div>
 
-              <div className="flex items-center justify-center flex-col md:flex-row gap-1 md:gap-2">
-                <div className="flex items-center gap-2">
-                  <Calendar size={24} color="#C0964B" />
-                  <div className="text-white text-xl font-medium">11, 12 e 13/05 às 20h</div>
-                </div>
-                <div className="w-[1px] md:h-[24px] h-[1px] bg-[#C0964B]" />
+              <div className="flex items-center justify-center">
                 <div className="flex items-center gap-2">
                   <Smartphone size={24} color="#C0964B" />
-                  <div className="text-white text-xl font-medium">Ao vivo e sem replay</div>
+                  <div className="text-white text-xl font-medium">
+                    Evento Ao Vivo e Sem Delay
+                  </div>
                 </div>
               </div>
 
@@ -193,8 +190,9 @@ export default function ContainerQuest({
                                   className="w-full text-left flex items-center gap-2 text-white"
                                 >
                                   <span
-                                    className={`h-4 w-4 border border-white rounded-sm inline-flex items-center justify-center ${checked ? "bg-white" : "bg-transparent"
-                                      }`}
+                                    className={`h-4 w-4 border border-white rounded-sm inline-flex items-center justify-center ${
+                                      checked ? "bg-white" : "bg-transparent"
+                                    }`}
                                   >
                                     {checked && (
                                       <span className="h-2 w-2 bg-teal-700 rounded-sm" />
@@ -230,8 +228,9 @@ export default function ContainerQuest({
                             <Button
                               onClick={handleNext}
                               disabled={!isCurrentQuestionAnswered || isSubmittingAnswers}
-                              className={`bg-[#936C27] bg-[radial-gradient(circle,_#E2CA9E_25%,_#936C27_100%)] font-black min-h-[47px] rounded-[41px] font-mulish text-[#02161C] text-sm md:text-base transition-colors duration-200 ${currentQuestion === 0 ? "col-span-2" : ""
-                                } hover:bg-[#B98A41] hover:bg-[radial-gradient(circle,_#ECD7B0_25%,_#B98A41_100%)]`}
+                              className={`bg-[#936C27] bg-[radial-gradient(circle,_#E2CA9E_25%,_#936C27_100%)] font-black min-h-[47px] rounded-[41px] font-mulish text-[#02161C] text-sm md:text-base transition-colors duration-200 ${
+                                currentQuestion === 0 ? "col-span-2" : ""
+                              } hover:bg-[#B98A41] hover:bg-[radial-gradient(circle,_#ECD7B0_25%,_#B98A41_100%)]`}
                             >
                               {finalActionLabel
                                 ? finalActionLabel
@@ -250,32 +249,10 @@ export default function ContainerQuest({
                   </div>
                 </div>
               </div>
-
-              {/* <div className="mb-6 md:mb-8 text-center text-white">
-                <p
-                  className="dark:text-white light:text-[#07242C] text-xs md:text-sm mb-4 md:mb-5"
-                  style={{ fontFamily: '"Roboto", Sans-serif' }}
-                >
-                  Apos responder as questoes, toque no botao abaixo
-                  <br className="hidden md:block" />
-                  para receber o link e materiais do evento:
-                </p>
-
-                <Button
-                  className="w-full max-w-sm py-4 md:py-6 text-sm md:text-base hover:opacity-90 transition-opacity duration-300 rounded-3xl"
-                  onClick={() => window.open(whatsappUrl, "_blank")}
-                  style={{
-                    background:
-                      "linear-gradient(96.48deg, #065100 -18.33%, #49E413 159.75%)",
-                    fontFamily: '"Roboto", Sans-serif',
-                  }}
-                >
-                  Clique aqui para entrar no Grupo no WhatsApp
-                </Button>
-              </div> */}
             </div>
           </div>
         </div>
+
         {footerContent ? (
           footerContent
         ) : (
@@ -287,12 +264,13 @@ export default function ContainerQuest({
 
             <Button
               className="w-full mb-10 max-w-sm py-4 md:py-6 text-sm md:text-base transition-none rounded-3xl bg-[#25D366] hover:bg-[#25D366] hover:opacity-100"
-               onClick={() => window.open(whatsappUrl, "_blank")}
+              onClick={() => window.open(whatsappUrl, "_blank")}
             >
               Entrar no Grupo
             </Button>
           </>
         )}
+
         <footer className="w-full flex items-center justify-center flex-col mb-20 gap-8">
           <div className="mb-6 md:mb-8 flex justify-center mt-6">
             <Image
