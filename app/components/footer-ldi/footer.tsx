@@ -11,8 +11,8 @@ type FooterLdiProps = {
 };
 
 const LOGO_BY_VARIANT: Record<LogoVariant, string> = {
-  default: "/images/logo.png",
-  dark: "/images/v5/LOGO OLDI.png",
+  default: "/images/v8/logo_alianca.png",
+  dark: "/images/v8/logo_alianca.png",
 };
 
 export default function FooterLdi({
@@ -20,7 +20,7 @@ export default function FooterLdi({
   darkTheme = false,
   logoVariant = "default",
 }: FooterLdiProps) {
-  const textColorClass = darkTheme ? "text-[#0A3740]" : "text-white";
+  const textColorClass = "text-[#000000]";
   const logoSrc = LOGO_BY_VARIANT[logoVariant];
 
   return (
@@ -42,7 +42,12 @@ export default function FooterLdi({
           Todos os direitos reservados.
         </div>
 
-        <Image src={logoSrc} alt="Risk" width={250} height={32} />
+        <Image
+          src={logoSrc}
+          alt="Aliança Divergente"
+          width={250}
+          height={32}
+        />
 
         <div
           className={cn(
@@ -54,7 +59,7 @@ export default function FooterLdi({
           Todos os direitos reservados.
         </div>
 
-        <div className="flex flex-col items-center md:items-start space-x-2">
+        <div className="flex flex-col items-center md:items-start">
           <div className="flex items-center space-x-2">
             <Link
               href="https://www.olevantedosimprovaveis.com/politica-de-privacidade"

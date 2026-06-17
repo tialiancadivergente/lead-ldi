@@ -5,11 +5,12 @@ import SplashScreenOro from "@/app/components/SplashScreen/SplashScreenOro";
 import Formv1 from "@/app/ldi/[version]/v1";
 import Formv2 from "@/app/ldi/[version]/v2";
 import Formv3 from "@/app/ldi/[version]/v3";
-import Formv4 from "@/app/ldi/[version]/v4";  
+import Formv4 from "@/app/ldi/[version]/v4";
 import Formv5 from "@/app/ldi/[version]/v5";
 import Formv6 from "@/app/ldi/[version]/v6";
 import Formv7 from "@/app/ldi/[version]/v7";
 import Formv8 from "@/app/ldi/[version]/v8";
+import Formv9 from "@/app/ldi/[version]/v9";
 
 export default function Home() {
   const { version } = useParams();
@@ -69,6 +70,15 @@ export default function Home() {
       </SplashScreenOro>
     );
   }
+
+  if (version === "v9") {
+    return (
+      <SplashScreenOro>
+        <Formv9 />
+      </SplashScreenOro>
+    );
+  }
+
   return (
     <SplashScreenOro>
       <Formv1 />
