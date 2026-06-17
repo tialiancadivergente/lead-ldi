@@ -68,7 +68,7 @@ function RpcV1Content() {
 
   const mutationCreateLeadScoreStart = useCreateLeadScoreStart();
 
-  // ************* INICIO - CODIGO LEGADO ************* 
+  // ************* INICIO - CODIGO LEGADO *************
   // Capturar UTMs da queryString
   useEffect(() => {
     if (searchParams) {
@@ -109,14 +109,14 @@ function RpcV1Content() {
       }
     }
   }, [searchParams]);
-  // ************* FINAL - CODIGO LEGADO ************* 
+  // ************* FINAL - CODIGO LEGADO *************
 
-  // *********** INICIO - CODIGO LEGADO *********** 
+  // *********** INICIO - CODIGO LEGADO ***********
   const mapTagSendFlow = {
-    f: "https://redirects.aliancadivergente.com.br/q6xh",
-    org: "https://redirects.aliancadivergente.com.br/oro-pages-org",
-    m: "https://redirects.aliancadivergente.com.br/oro-pages-m",
-    q: "https://redirects.aliancadivergente.com.br/oro-pages-q",
+    f: "https://sendflow.click/i/ldi-jul26",
+    org: "https://sendflow.click/i/ldi-jul26-org",
+    m: "https://sendflow.click/i/ldi-jul26",
+    q: "https://sendflow.click/i/ldi-jul26",
 } as any;
 
   const getWhatsappUrl = () => {
@@ -140,7 +140,7 @@ function RpcV1Content() {
     const tem = normalizeTemperature(searchParams.get('temperature') || undefined)
     setTemperatura(tem)
   }, [searchParams])
-  // *********** FINAL - CODIGO LEGADO *********** 
+  // *********** FINAL - CODIGO LEGADO ***********
 
   useEffect(() => {
     if (params && params.temperature) {
@@ -360,7 +360,7 @@ function RpcV1Content() {
   };
 
   const submitLeadScore = async (leadRegistrationRequestId: string) => {
-    // *********** INICIO - CODIGO LEGADO *********** 
+    // *********** INICIO - CODIGO LEGADO ***********
     const totalScore = calculateTotalScore(questions, answers);
     const faixa = resolveFaixaByTotalScore(totalScore);
     const formattedAnswers = formatAnswersForTracking(questions, answers);
@@ -490,7 +490,7 @@ function RpcV1Content() {
     };
 
     void executeTracking();
-    //  *********** FINAL - CODIGO LEGADO *********** 
+    //  *********** FINAL - CODIGO LEGADO ***********
 
     const gtmData = {
       email,
