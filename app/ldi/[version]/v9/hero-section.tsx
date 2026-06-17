@@ -55,7 +55,7 @@ export default function HeroSection({
           <div className="flex items-center gap-2 min-w-0">
             <CalendarDays size={18} color="#07242C" className="shrink-0" />
             <span className="leading-[120%] whitespace-nowrap">
-              06, 07 e 08/07 | Às 20h
+              20, 21 e 22/07 | Às 20h
             </span>
           </div>
 
@@ -94,7 +94,7 @@ export default function HeroSection({
           <div className="flex items-center gap-1.5 min-w-0">
             <CalendarDays size={16} color="#07242C" className="shrink-0" />
             <span className="leading-[120%]">
-              06, 07 e 08/07 | Às 20h
+            20, 21 e 22/07 | Às 20h
             </span>
           </div>
 
