@@ -20,7 +20,7 @@ export default function FooterLdi({
   darkTheme = false,
   logoVariant = "default",
 }: FooterLdiProps) {
-  const textColorClass = "text-[#000000]";
+  const textColorClass = "text-[#31737D]";
   const logoSrc = LOGO_BY_VARIANT[logoVariant];
 
   return (
