@@ -171,6 +171,7 @@ export default function Formv9() {
           ip: "",
           user_agent: navigator.userAgent || "",
           cookies,
+          temperature: temperatura,
         },
       };
 
