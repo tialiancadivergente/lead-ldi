@@ -51,7 +51,7 @@ export default function HeroSection({
               color="#02252C"
               className="shrink-0 md:w-[18px] md:h-[18px]"
             />
-            <span className="leading-[120%]">11 ,12 e 13/05 às 20h</span>
+            <span className="leading-[120%]">03, 04 e 05/08 às 20h</span>
           </div>
 
           <div className="w-[1px] h-[16px] bg-[#02252C]" />
@@ -116,7 +116,7 @@ export default function HeroSection({
               color="#C0964B"
               className="shrink-0 md:w-[18px] md:h-[18px]"
             />
-            <span className="leading-[120%]">11, 12 e 13/05 às 20h</span>
+            <span className="leading-[120%]">03, 04 e 05/08 às 20h</span>
           </div>
 
           <div className="w-[1px] h-[16px] bg-[#F4F0E1]" />
