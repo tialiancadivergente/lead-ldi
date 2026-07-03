@@ -31,7 +31,7 @@ export default function FiveSection({
       "
     >
       <div className="w-full max-w-[1060px] mx-auto">
-        
+
         {/* MOBILE */}
         <div className="flex flex-col items-center justify-start px-[24px] pt-[90px] pb-[70px] md:hidden">
 
@@ -52,7 +52,7 @@ export default function FiveSection({
             id="cta-section-title-v2"
             className="mt-[22px] font-spectral font-bold text-[22px] leading-[110%] text-center text-[#F4F0E1]"
           >
-            11 a 13 de Maio, às 20h
+            03, 04 e 05/08 às 20h
           </h2>
 
           <div className="mt-[40px] w-full max-w-[320px]">
@@ -109,7 +109,7 @@ export default function FiveSection({
             </div>
 
             <h2 className="font-spectral font-bold text-[22.47px] leading-[33.7px] text-center text-[#F4F0E1]">
-              11 a 13 de Maio, às 20h
+              03, 04 e 05/08 às 20h
             </h2>
           </div>
 
