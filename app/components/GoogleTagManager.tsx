@@ -1,65 +1,68 @@
 "use client";
 
-import { Suspense, useEffect } from "react";
+import { useEffect } from "react";
 import TagManager from "react-gtm-module";
-import { useParams, usePathname, useSearchParams } from "next/navigation";
+import useUserIP from "../hooks/useUserIP";
+import { useParams } from "next/navigation";
 
-const GoogleTagManagerInner = () => {
-  const { temperature } = useParams();
-  const pathname = usePathname();
-  const searchParams = useSearchParams();
 
+const GoogleTagManager = () => {
+  const { temperature, slug } = useParams();
+  const userIp = useUserIP(); // Captura o IP no carregamento
+  console.log('meu ip =>', userIp);
   useEffect(() => {
-    const defaultGtmId = "GTM-WKPB8M8L";
-    const oroOrgGtmId = "GTM-MF9LVRFF";
-    const oraOrgGtmId = "";
-    const routeTemperature = Array.isArray(temperature)
-      ? temperature[0]
-      : temperature || "";
-    const queryTemperature = searchParams?.get("temperature") || "";
-    const normalizedTemperature = (
-      routeTemperature || queryTemperature
-    ).toLowerCase();
-    const normalizedPathname = (pathname || "").toLowerCase();
-    const shouldSkipTagManager =
-      normalizedPathname.startsWith("/redo");
+    const defaultGtmId = 'GTM-WKPB8M8L';
+    const oroOrgGtmId = 'GTM-MF9LVRFF';
+    const normalizedTemperature = (Array.isArray(temperature) ? temperature[0] : temperature || '').toLowerCase();
+    const normalizedSlug = (Array.isArray(slug) ? slug : slug ? [slug] : [])
+      .map((segment) => segment.toLowerCase());
+    const isNomineesSlug = normalizedSlug.length === 1 && normalizedSlug[0] === 'nominees';
 
-    if (shouldSkipTagManager) {
+    if (isNomineesSlug) {
+      console.log('gtmId =====> ', '');
       return;
     }
 
-    const getGtmIdByPathname = (currentPathname: string) => {
-      const isOraRoute = currentPathname.includes("/ora");
-      const isEligibleTemperature =
-        normalizedTemperature === "o" || normalizedTemperature === "org";
+    const getGtmIdByHostname = (hostname: string) => {
+      // Normaliza host (ignora porta, se houver)
+      const cleanHost = hostname.split(':')[0].toLowerCase();
 
-      if (isOraRoute) {
-        return oraOrgGtmId;
-      }
+      // Captura subdomínio (primeiro label)
+      const [firstLabel] = cleanHost.split('.');
 
-      if (isEligibleTemperature) {
-        return oroOrgGtmId;
-      }
+      // Mapeamento por subdomínio específico
+      const map: Record<string, string> = {
+        mt: 'GTM-K72SR8R4',
+        gg: 'GTM-NNCP73G5',
+        tt: 'GTM-WD86PJNQ',
+      };
 
+      // Se houver correspondência exata para o primeiro label, usa-a
+      if (map[firstLabel]) return map[firstLabel];
+
+      // Mantém o atual para o domínio principal e demais casos
       return defaultGtmId;
     };
-    const gtmIdByPath = getGtmIdByPathname(normalizedPathname);
-    const gtmId = gtmIdByPath !== defaultGtmId ? gtmIdByPath : defaultGtmId;
 
-    console.log("gtmId ===>", gtmId);
+    const getGtmIdByPathname = (pathname: string) => {
+      const isEligibleTemperature = normalizedTemperature === 'o' || normalizedTemperature === 'org';
+      if (isEligibleTemperature) return oroOrgGtmId;
+      return defaultGtmId;
+    };
 
+    const host = typeof window !== 'undefined' ? window.location.hostname : '';
+    const pathname = typeof window !== 'undefined' ? window.location.pathname : '';
+    const gtmIdByPath = getGtmIdByPathname(pathname);
+    const gtmId = gtmIdByPath !== defaultGtmId
+      ? gtmIdByPath
+      : host
+        ? getGtmIdByHostname(host)
+        : defaultGtmId;
+    console.log('gtmId =====> ', gtmId)
     TagManager.initialize({ gtmId });
-  }, [pathname, temperature, searchParams]);
+  }, [temperature, slug]);
 
-  return null;
-};
-
-const GoogleTagManager = () => {
-  return (
-    <Suspense fallback={null}>
-      <GoogleTagManagerInner />
-    </Suspense>
-  );
+  return null; // Esse componente não precisa renderizar nada
 };
 
 export default GoogleTagManager;

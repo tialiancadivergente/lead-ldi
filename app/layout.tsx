@@ -2,7 +2,6 @@ import type React from "react"
 import type { Metadata } from "next"
 import './globals.css'
 import { Spectral, Bebas_Neue, Roboto, Raleway, Mulish } from 'next/font/google'
-import "./globals.css"
 import GoogleTagManager from "./components/GoogleTagManager"
 import MicrosoftClarity from "./components/MicrosoftClarity"
 import AliancaTrackingScript from "./components/AliancaTrackingScript"
