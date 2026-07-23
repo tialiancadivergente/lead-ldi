@@ -98,7 +98,7 @@ export default function ContainerQuest({
                 <div className="flex items-center gap-2">
                   <Smartphone size={24} color="#C0964B" />
                   <div className="text-white text-xl font-medium">
-                    Evento Ao Vivo e Sem Delay
+                  Evento 100% online e gratuito
                   </div>
                 </div>
               </div>
